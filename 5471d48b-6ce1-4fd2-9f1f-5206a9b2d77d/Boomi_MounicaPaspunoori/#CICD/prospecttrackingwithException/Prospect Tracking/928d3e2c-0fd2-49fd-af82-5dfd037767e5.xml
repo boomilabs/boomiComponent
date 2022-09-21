@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/#CICD/prospecttrackingwithException/Prospect Tracking" componentId="928d3e2c-0fd2-49fd-af82-5dfd037767e5" version="1" name="SalesforceTo Database" type="transform.map" createdDate="2022-09-21T05:41:38Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2022-09-21T05:41:38Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1MjE3MDEw" copiedFromComponentId="dac3f529-41dc-42b9-b9bb-18e9f3d7e886" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="84251fc7-c41b-4d55-89f6-a96521447b80" toProfile="b0008b76-69e7-487a-8df9-ad7851bf9148">
+      <Mappings>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='9']" fromNamePath="Account/BillingStreet" fromType="profile" toKey="4" toKeyPath="*[@key='2']/*[@key='3']/*[@key='4']" toNamePath="Statement/Fields/ADDRESSLINE1" toType="profile"/>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='9']" fromNamePath="Account/BillingStreet" fromType="profile" toKey="5" toKeyPath="*[@key='2']/*[@key='3']/*[@key='5']" toNamePath="Statement/Fields/ADDRESSLINE2" toType="profile"/>
+        <Mapping fromKey="10" fromKeyPath="*[@key='1']/*[@key='10']" fromNamePath="Account/BillingCity" fromType="profile" toKey="6" toKeyPath="*[@key='2']/*[@key='3']/*[@key='6']" toNamePath="Statement/Fields/CITY" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="7" toKeyPath="*[@key='2']/*[@key='3']/*[@key='7']" toNamePath="Statement/Fields/CONTACTFIRSTNAME" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="8" toKeyPath="*[@key='2']/*[@key='3']/*[@key='8']" toNamePath="Statement/Fields/CONTACTLASTNAME" toType="profile"/>
+        <Mapping fromKey="13" fromKeyPath="*[@key='1']/*[@key='13']" fromNamePath="Account/BillingCountry" fromType="profile" toKey="9" toKeyPath="*[@key='2']/*[@key='3']/*[@key='9']" toNamePath="Statement/Fields/COUNTRY" toType="profile"/>
+        <Mapping fromKey="32" fromKeyPath="*[@key='1']/*[@key='32']" fromNamePath="Account/AnnualRevenue" fromType="profile" toKey="10" toKeyPath="*[@key='2']/*[@key='3']/*[@key='10']" toNamePath="Statement/Fields/CREDITLIMIT" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="11" toKeyPath="*[@key='2']/*[@key='3']/*[@key='11']" toNamePath="Statement/Fields/CUSTOMERNAME" toType="profile"/>
+        <Mapping fromKey="27" fromKeyPath="*[@key='1']/*[@key='27']" fromNamePath="Account/Phone" fromType="profile" toKey="13" toKeyPath="*[@key='2']/*[@key='3']/*[@key='13']" toNamePath="Statement/Fields/PHONE" toType="profile"/>
+        <Mapping fromKey="12" fromKeyPath="*[@key='1']/*[@key='12']" fromNamePath="Account/BillingPostalCode" fromType="profile" toKey="14" toKeyPath="*[@key='2']/*[@key='3']/*[@key='14']" toNamePath="Statement/Fields/POSTALCODE" toType="profile"/>
+        <Mapping fromCacheJoinKey="0" fromKey="2" fromKeyPath="*[@key='1']/*[@key='2']" fromNamePath="Account/Id" fromType="profile" toKey="17" toKeyPath="*[@key='2']/*[@key='3']/*[@key='17']" toNamePath="Statement/Fields/ID" toType="profile"/>
+        <Mapping fromKey="11" fromKeyPath="*[@key='1']/*[@key='11']" fromNamePath="Account/BillingState" fromType="profile" toKey="16" toKeyPath="*[@key='2']/*[@key='3']/*[@key='16']" toNamePath="Statement/Fields/STATE" toType="profile"/>
+        <Mapping fromKey="33" fromKeyPath="*[@key='1']/*[@key='33']" fromNamePath="Account/NumberOfEmployees" fromType="profile" toKey="15" toKeyPath="*[@key='2']/*[@key='3']/*[@key='15']" toNamePath="Statement/Fields/SALESREPEMPLOYEENUMBER" toType="profile"/>
+        <Mapping fromKey="2" fromKeyPath="*[@key='1']/*[@key='2']" fromNamePath="Account/Id" fromType="profile" toKey="12" toKeyPath="*[@key='2']/*[@key='3']/*[@key='12']" toNamePath="Statement/Fields/CUSTOMERNUMBER" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

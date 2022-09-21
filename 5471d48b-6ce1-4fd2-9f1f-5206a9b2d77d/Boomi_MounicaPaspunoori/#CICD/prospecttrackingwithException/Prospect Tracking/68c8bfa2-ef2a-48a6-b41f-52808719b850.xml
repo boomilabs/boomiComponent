@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/#CICD/prospecttrackingwithException/Prospect Tracking" componentId="68c8bfa2-ef2a-48a6-b41f-52808719b850" version="1" name="Salesforce_test" type="connector-settings" subType="salesforce" createdDate="2022-09-21T05:41:37Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2022-09-21T05:41:37Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1MjE3MDEw" copiedFromComponentId="c97a9f0e-69ae-477b-aa4b-f4e38466d2bd" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://login.salesforce.com/services/Soap/u/39.0" version="vx">
+      <AuthSettings password="5434d339f6333d8ee16a0f6f2ecf3d2f875c72f228c69ac750f05d3bc97261de88b595226999c9c66ba756f3574614f397c9f4c20eecbb1fbad3cc2e2197260b" user="boomi@isvedition.org"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>
