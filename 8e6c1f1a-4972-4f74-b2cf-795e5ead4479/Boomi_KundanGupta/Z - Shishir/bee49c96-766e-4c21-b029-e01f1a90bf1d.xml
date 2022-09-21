@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="bee49c96-766e-4c21-b029-e01f1a90bf1d" version="2" name="XML: Channel Reading" type="profile.xml" createdDate="2020-07-23T10:12:41Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-07-23T11:34:45Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false" respectMinOccursAlways="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="3" maxOccurs="1" minOccurs="1" name="MeterReadingDocument" typeExpanded="false" typeKey="-1" useNamespace="-1">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="4" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Header" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="5" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IEE_System" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="6" name="Id" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="7" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Creation_Datetime" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="8" name="Datetime" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileDateFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="9" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Timezone" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="10" name="Id" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="11" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Path" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="12" name="FilePath" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="13" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Export_Template" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="14" name="Id" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="15" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ImportExportParameters" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="16" name="CreateResubmitFile" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="17" name="CreateReadingGroupForRegisterReads" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="18" loopingOption="unique" maxOccurs="1" minOccurs="1" name="DataFormat" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="19" name="ReadingTimestampType" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="20" name="DSTTransitionType" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="21" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Channels" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="22" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Channel" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="23" name="StartDate" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileDateFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="24" name="EndDate" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileDateFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="25" name="TimeZone" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="26" name="IsRegister" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="27" name="MarketType" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="number" isMappable="true" isNode="true" key="28" name="IntervalLength" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileNumberFormat numberFormat=""/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="number" isMappable="true" isNode="true" key="29" name="NumberOfDials" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileNumberFormat numberFormat=""/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="number" isMappable="true" isNode="true" key="30" name="PulseMultiplier" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileNumberFormat numberFormat=""/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="number" isMappable="true" isNode="true" key="31" name="PressureCompensationFactor" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileNumberFormat numberFormat=""/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="32" name="IsReadingDecoded" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="33" name="ReadingsInPulse" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="34" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ChannelID" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="35" name="ServicePointChannelID" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="36" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ConfigurationEntities" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="37" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IntervalChannel" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="38" name="EffectiveStartDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="39" name="EffectiveEndDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="40" name="ChannelNumber" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="41" name="IntervalLength" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="42" name="RollingIntervalLength" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="43" name="PulseMiscMultiplier" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="44" name="PulseOffset" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="45" name="UnitOfMeasure" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="46" name="KEMultiplier" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="47" name="SourceReactiveType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="48" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Meter" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="49" name="EffectiveStartDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="50" name="EffectiveEndDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="51" name="MeterID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="52" name="MeterNumber" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="53" name="Status" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="54" name="Multiplier" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="55" name="IsCombinedMeterRecorder" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="56" name="Model" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="57" name="TimeZone" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="58" name="Manufacturer" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="59" name="PhaseCode" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="60" name="DateInitialized" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="61" name="ReadSequence" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="62" name="InstallDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="63" name="PTRatio" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="64" name="CTRatio" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="65" name="PressureCompensationFactor" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="66" name="ExternalSystemID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="67" name="MeterConfig" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="68" name="ContactForm" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="69" name="EndpointID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="70" name="MarketType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="71" name="ConfiguredForGasDayTake" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="72" loopingOption="unique" maxOccurs="1" minOccurs="1" name="RecordingDevice" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="73" name="EffectiveStartDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="74" name="EffectiveEndDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="75" name="RecordingDeviceID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="76" name="DeviceID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="77" name="Manufacturer" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="78" name="Model" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="79" name="RecordingDeviceType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="80" name="TimeZone" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="81" name="ExternalSystemID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="82" name="ExternalRecordingDeviceID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="83" name="DaysOnBattery" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="84" name="MinutesOnBattery" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="85" name="BatteryInstallDate" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileDateFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="86" name="MarketType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="87" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ServicePoint" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="88" name="ServicePointID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="89" name="CommodityType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="90" name="TimeZone" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="91" name="TransformerPhase" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="92" name="ExternalBillingSystemCycleID" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="93" name="ReadingsImportBehavior" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="94" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ServicePointChannel" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="95" name="ChannelNumber" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="96" name="UnitOfMeasure" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="97" name="Description" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="98" name="ChannelType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="99" name="PowerFlowType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLAttribute dataType="character" isMappable="true" isNode="true" key="100" name="ReadingType" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLAttribute>
+                </XMLElement>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="101" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSets" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="102" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSet" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLAttribute dataType="number" isMappable="true" isNode="true" key="103" name="NumberOfReadings" required="false" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileNumberFormat numberFormat=""/>
+                    </DataFormat>
+                  </XMLAttribute>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="104" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TimePeriod" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                    <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="105" name="StartTime" required="false" useNamespace="-1" validateData="false">
+                      <DataFormat>
+                        <ProfileDateFormat/>
+                      </DataFormat>
+                    </XMLAttribute>
+                    <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="106" name="EndTime" required="false" useNamespace="-1" validateData="false">
+                      <DataFormat>
+                        <ProfileDateFormat/>
+                      </DataFormat>
+                    </XMLAttribute>
+                    <XMLAttribute dataType="number" isMappable="true" isNode="true" key="107" name="EndRead" required="false" useNamespace="-1" validateData="false">
+                      <DataFormat>
+                        <ProfileNumberFormat numberFormat=""/>
+                      </DataFormat>
+                    </XMLAttribute>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="108" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Readings" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                    <XMLElement dataType="character" isMappable="true" isNode="true" key="1839" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Reading" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                      <DataFormat>
+                        <ProfileCharacterFormat/>
+                      </DataFormat>
+                      <XMLAttribute dataType="number" isMappable="true" isNode="true" key="1840" name="Value" required="false" useNamespace="-1" validateData="false">
+                        <DataFormat>
+                          <ProfileNumberFormat numberFormat=""/>
+                        </DataFormat>
+                      </XMLAttribute>
+                      <XMLElement dataType="character" isMappable="true" isNode="true" key="1841" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ReadingStatus" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                        <DataFormat>
+                          <ProfileCharacterFormat/>
+                        </DataFormat>
+                        <XMLElement dataType="character" isMappable="true" isNode="true" key="1842" loopingOption="unique" maxOccurs="1" minOccurs="1" name="UnencodedStatus" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                          <DataFormat>
+                            <ProfileCharacterFormat/>
+                          </DataFormat>
+                          <XMLAttribute dataType="character" isMappable="true" isNode="true" key="1843" name="SourceValidation" required="false" useNamespace="-1" validateData="false">
+                            <DataFormat>
+                              <ProfileCharacterFormat/>
+                            </DataFormat>
+                          </XMLAttribute>
+                          <XMLElement dataType="character" isMappable="true" isNode="true" key="1844" loopingOption="unique" maxOccurs="1" minOccurs="1" name="StatusCodes" typeExpanded="false" typeKey="-1" useNamespace="-1" validateData="false">
+                            <DataFormat>
+                              <ProfileCharacterFormat/>
+                            </DataFormat>
+                            <XMLElement dataType="character" isMappable="true" isNode="true" key="1848" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Code" typeKey="-1" useNamespace="-1" validateData="false">
+                              <DataFormat>
+                                <ProfileCharacterFormat/>
+                              </DataFormat>
+                            </XMLElement>
+                          </XMLElement>
+                        </XMLElement>
+                      </XMLElement>
+                    </XMLElement>
+                  </XMLElement>
+                </XMLElement>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace" prefix="ns1">
+          <Types>
+            <Type anonymous="true" declarationClass="cType" typeKey="-41">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="42" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Channel" typeExpanded="false" typeKey="-41" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="43" name="StartDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="44" name="EndDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="45" name="TimeZone" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="46" name="IsRegister" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="47" name="MarketType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="48" name="IntervalLength" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="49" name="NumberOfDials" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="50" name="PulseMultiplier" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="51" name="PressureCompensationFactor" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="52" name="IsReadingDecoded" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="53" name="ReadingsInPulse" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="54" maxOccurs="1" minOccurs="1" name="ChannelID" typeExpanded="false" typeKey="-55" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="58" maxOccurs="1" minOccurs="1" name="ConfigurationEntities" typeExpanded="false" typeKey="-59" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="135" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSets" typeExpanded="false" typeKey="-136" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-55">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="56" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ChannelID" typeExpanded="false" typeKey="-55" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="57" name="ServicePointChannelID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-38">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="39" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Channels" typeExpanded="false" typeKey="-38" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="40" maxOccurs="-1" minOccurs="0" name="Channel" typeExpanded="false" typeKey="-41" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-59">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="60" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ConfigurationEntities" typeExpanded="false" typeKey="-59" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="61" maxOccurs="1" minOccurs="1" name="IntervalChannel" typeExpanded="false" typeKey="-62" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="74" maxOccurs="1" minOccurs="1" name="Meter" typeExpanded="false" typeKey="-75" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="100" maxOccurs="1" minOccurs="1" name="RecordingDevice" typeExpanded="false" typeKey="-101" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="117" maxOccurs="1" minOccurs="1" name="ServicePoint" typeExpanded="false" typeKey="-118" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="126" maxOccurs="1" minOccurs="1" name="ServicePointChannel" typeExpanded="false" typeKey="-127" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-139">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="140" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSet" typeExpanded="false" typeKey="-139" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="141" name="NumberOfReadings" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="142" maxOccurs="1" minOccurs="1" name="TimePeriod" typeExpanded="false" typeKey="-143" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="148" maxOccurs="1" minOccurs="1" name="Readings" typeExpanded="false" typeKey="-149" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-136">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="137" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSets" typeExpanded="false" typeKey="-136" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="138" maxOccurs="1" minOccurs="1" name="ContiguousIntervalSet" typeExpanded="false" typeKey="-139" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-12">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="13" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Creation_Datetime" typeExpanded="false" typeKey="-12" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="14" name="Datetime" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-33">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="34" loopingOption="unique" maxOccurs="1" minOccurs="1" name="DataFormat" typeExpanded="false" typeKey="-33" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="35" name="ReadingTimestampType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="36" name="DSTTransitionType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-24">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="25" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Export_Template" typeExpanded="false" typeKey="-24" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="26" name="Id" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-5">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="6" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Header" typeExpanded="false" typeKey="-5" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="7" maxOccurs="1" minOccurs="1" name="IEE_System" typeExpanded="false" typeKey="-8" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="11" maxOccurs="1" minOccurs="1" name="Creation_Datetime" typeExpanded="false" typeKey="-12" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="15" maxOccurs="1" minOccurs="1" name="Timezone" typeExpanded="false" typeKey="-16" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="19" maxOccurs="1" minOccurs="1" name="Path" typeExpanded="false" typeKey="-20" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="23" maxOccurs="1" minOccurs="1" name="Export_Template" typeExpanded="false" typeKey="-24" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-8">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="9" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IEE_System" typeExpanded="false" typeKey="-8" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="10" name="Id" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-28">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="29" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ImportExportParameters" typeExpanded="false" typeKey="-28" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="30" name="CreateResubmitFile" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="31" name="CreateReadingGroupForRegisterReads" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="32" maxOccurs="1" minOccurs="1" name="DataFormat" typeExpanded="false" typeKey="-33" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-62">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="63" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IntervalChannel" typeExpanded="false" typeKey="-62" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="64" name="EffectiveStartDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="65" name="EffectiveEndDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="66" name="ChannelNumber" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="67" name="IntervalLength" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="68" name="RollingIntervalLength" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="69" name="PulseMiscMultiplier" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="70" name="PulseOffset" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="71" name="UnitOfMeasure" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="72" name="KEMultiplier" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="73" name="SourceReactiveType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-75">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="76" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Meter" typeExpanded="false" typeKey="-75" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="77" name="EffectiveStartDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="78" name="EffectiveEndDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="79" name="MeterID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="80" name="MeterNumber" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="81" name="Status" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="82" name="Multiplier" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="83" name="IsCombinedMeterRecorder" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="84" name="Model" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="85" name="TimeZone" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="86" name="Manufacturer" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="87" name="PhaseCode" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="88" name="DateInitialized" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="89" name="ReadSequence" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="90" name="InstallDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="91" name="PTRatio" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="92" name="CTRatio" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="93" name="PressureCompensationFactor" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="94" name="ExternalSystemID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="95" name="MeterConfig" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="96" name="ContactForm" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="97" name="EndpointID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="98" name="MarketType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="99" name="ConfiguredForGasDayTake" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-2">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="3" loopingOption="unique" maxOccurs="1" minOccurs="0" name="MeterReadingDocument" typeExpanded="false" typeKey="-2" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="4" maxOccurs="1" minOccurs="1" name="Header" typeExpanded="false" typeKey="-5" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="27" maxOccurs="1" minOccurs="1" name="ImportExportParameters" typeExpanded="false" typeKey="-28" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="37" maxOccurs="1" minOccurs="1" name="Channels" typeExpanded="false" typeKey="-38" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-20">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="21" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Path" typeExpanded="false" typeKey="-20" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="22" name="FilePath" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-152">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="153" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Reading" typeExpanded="false" typeKey="-152" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="154" name="Value" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="155" maxOccurs="1" minOccurs="1" name="ReadingStatus" typeExpanded="false" typeKey="-156" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-149">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="150" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Readings" typeExpanded="false" typeKey="-149" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="151" maxOccurs="-1" minOccurs="0" name="Reading" typeExpanded="false" typeKey="-152" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-156">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="157" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ReadingStatus" typeExpanded="false" typeKey="-156" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="158" maxOccurs="1" minOccurs="1" name="UnencodedStatus" typeExpanded="false" typeKey="-159" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-101">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="102" loopingOption="unique" maxOccurs="1" minOccurs="1" name="RecordingDevice" typeExpanded="false" typeKey="-101" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="103" name="EffectiveStartDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="104" name="EffectiveEndDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="105" name="RecordingDeviceID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="106" name="DeviceID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="107" name="Manufacturer" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="108" name="Model" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="109" name="RecordingDeviceType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="110" name="TimeZone" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="111" name="ExternalSystemID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="112" name="ExternalRecordingDeviceID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="113" name="DaysOnBattery" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="114" name="MinutesOnBattery" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="115" name="BatteryInstallDate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="116" name="MarketType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-118">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="119" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ServicePoint" typeExpanded="false" typeKey="-118" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="120" name="ServicePointID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="121" name="CommodityType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="122" name="TimeZone" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="123" name="TransformerPhase" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="124" name="ExternalBillingSystemCycleID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="125" name="ReadingsImportBehavior" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-127">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="128" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ServicePointChannel" typeExpanded="false" typeKey="-127" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="129" name="ChannelNumber" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="130" name="UnitOfMeasure" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="131" name="Description" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="132" name="ChannelType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="133" name="PowerFlowType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="134" name="ReadingType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-163">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="164" loopingOption="unique" maxOccurs="1" minOccurs="1" name="StatusCodes" typeExpanded="false" typeKey="-163" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="165" maxOccurs="-1" minOccurs="0" name="Code" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-143">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="144" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TimePeriod" typeExpanded="false" typeKey="-143" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="145" name="StartTime" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="datetime" isMappable="true" isNode="true" key="146" name="EndTime" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileDateFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="number" isMappable="true" isNode="true" key="147" name="EndRead" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-16">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="17" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Timezone" typeExpanded="false" typeKey="-16" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="18" name="Id" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="true" declarationClass="cType" typeKey="-159">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="160" loopingOption="unique" maxOccurs="1" minOccurs="1" name="UnencodedStatus" typeExpanded="false" typeKey="-159" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="161" name="SourceValidation" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="162" maxOccurs="1" minOccurs="1" name="StatusCodes" typeExpanded="false" typeKey="-163" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+      </Namespaces>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

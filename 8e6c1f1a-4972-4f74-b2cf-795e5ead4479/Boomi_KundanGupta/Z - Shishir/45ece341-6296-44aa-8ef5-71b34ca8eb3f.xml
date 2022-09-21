@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="45ece341-6296-44aa-8ef5-71b34ca8eb3f" version="13" name="MF: Real Time" type="transform.function" createdDate="2020-07-23T10:16:57Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-07-23T11:43:58Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs>
+        <Input key="1" name="startDate"/>
+        <Input key="2" name="reading"/>
+      </Inputs>
+      <Outputs>
+        <Output key="1" name="realtime"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Scripting" key="1" name="Scripting" position="1" sumEnabled="false" type="Scripting" x="505.0" y="208.0">
+          <Inputs>
+            <Input key="1" name="startDate"/>
+            <Input key="2" name="reading"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="realtime"/>
+          </Outputs>
+          <Configuration>
+            <Scripting language="javascript" preserveOrder="true" useComponent="false">
+              <ScriptToExecute>var indate1= startDate.replace("T", " "); 
+var indate=indate1.substring(0, 19);
+var dt=new Date(indate);
+var dtnew=dt.setTime(dt.getTime() + (reading *0.5* 60 * 60 * 1000));
+var dtreal=new Date(dtnew)
+var realtime1=dtreal.toISOString();
+realtime=realtime1.concat("+8")</ScriptToExecute>
+              <Input dataType="character" index="1" name="startDate"/>
+              <Input dataType="character" index="2" name="reading"/>
+              <Output index="3" name="realtime"/>
+            </Scripting>
+          </Configuration>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="0" fromKey="2" fromNamePath="Editor/reading" fromType="function" toFunction="1" toKey="2" toNamePath="Scripting/reading" toType="function"/>
+        <Mapping fromFunction="1" fromKey="3" fromNamePath="Scripting/realtime" fromType="function" toFunction="0" toKey="1" toNamePath="Editor/realtime" toType="function"/>
+        <Mapping fromFunction="0" fromKey="1" fromNamePath="Editor/startDate" fromType="function" toFunction="1" toKey="1" toNamePath="Scripting/startDate" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

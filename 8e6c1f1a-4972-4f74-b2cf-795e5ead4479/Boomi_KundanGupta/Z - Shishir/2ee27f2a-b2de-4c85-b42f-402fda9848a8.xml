@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="2ee27f2a-b2de-4c85-b42f-402fda9848a8" version="1" name="Der" type="certificate" createdDate="2020-09-30T10:16:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-09-30T10:16:17Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//CertificateModel/CertificateData/text()" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <CertificateModel xmlns="" MD5Fingerprint="84:61:52:69:B2:10:45:8E:17:D8:6F:EF:93:7F:08:E6" SHA1Fingerprint="21:E4:23:79:24:85:DD:0D:B3:8A:0E:DE:01:EA:99:47:7C:04:86:1D" serialNumber="0A:20:20:09:06:07:22:01" signatureAlgorithm="SHA256withRSA" version="1">
+      <Type>public</Type>
+      <IssuedTo commonName="*.beeah.ae" fullName="CN=*.beeah.ae,OU=Domain Control Validated" organizationalUnit="Domain Control Validated"/>
+      <Issuer commonName="*.beeah.ae" fullName="CN=*.beeah.ae,OU=Domain Control Validated" organizationalUnit="Domain Control Validated"/>
+      <Validity expireDate="2038-01-01T00:00:01.000Z" issueDate="2020-09-06T07:22:01.000Z"/>
+      <CertificateData>8fbad8d30609b562f351989eac8cdff70c0b3e3d6741e404c1cd9f08e6d97943026d584ff3a62f623c21512426134281fe5d99b7d5f59863a13a74b6ddf05862</CertificateData>
+    </CertificateModel>
+  </bns:object>
+</bns:Component>

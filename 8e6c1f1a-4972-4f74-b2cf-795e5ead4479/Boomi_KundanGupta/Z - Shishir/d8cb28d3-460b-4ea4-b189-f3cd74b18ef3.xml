@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="d8cb28d3-460b-4ea4-b189-f3cd74b18ef3" version="3" name="Test Connection" type="connector-settings" subType="http" createdDate="2020-09-30T06:36:58Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-09-30T10:16:38Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//HttpSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <HttpSettings xmlns="" authenticationType="BASIC" url="https://83.111.22.113:8444/sap/opu/odata/sap/ZBH_OF_INTEGRATION_SRV/myPenSummarySet?$format=json">
+      <AuthSettings password="267f95b1bc793d7875bd3aa2fd44f4953cf6bc866d9e93cbcbefbde8f696b49bf91c475565842739e50250f6cdd6287ec21f2bf6148ddbf72dfdfdf732425bc2" user="jci2"/>
+      <OAuthSettings accessToken="" accessTokenURL="" authorizationURL="" consumerKey="" realm="" requestTokenURL="" suppressBlankAccessToken="false"/>
+      <OAuth2Settings grantType="code">
+        <credentials clientId=""/>
+        <authorizationTokenEndpoint url="">
+          <sslOptions/>
+        </authorizationTokenEndpoint>
+        <authorizationParameters/>
+        <accessTokenEndpoint url="">
+          <sslOptions/>
+        </accessTokenEndpoint>
+        <accessTokenParameters/>
+        <scope/>
+      </OAuth2Settings>
+      <AwsSettings>
+        <credentials>
+          <accessKeyId/>
+          <awsService>s3</awsService>
+          <customService/>
+          <awsRegion>ap-northeast-1</awsRegion>
+          <customRegion/>
+        </credentials>
+      </AwsSettings>
+      <SSLOptions clientauth="false" trustServerCert="true" trustedcertalias="2ee27f2a-b2de-4c85-b42f-402fda9848a8"/>
+    </HttpSettings>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="6586c607-d8ce-4bb5-b565-d697ad3660db" version="5" name="Map: Test Java Script Map" type="transform.map" createdDate="2020-07-23T10:12:44Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-07-23T11:45:13Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="bee49c96-766e-4c21-b029-e01f1a90bf1d" toProfile="9c1cf725-bec8-4c60-8755-c486405d8191">
+      <Mappings>
+        <Mapping fromFunction="1" fromKey="1" fromType="function" toKey="3" toKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" toNamePath="Record/Elements/Date" toType="profile"/>
+        <Mapping fromKey="105" fromKeyPath="*[@key='3']/*[@key='21']/*[@key='22']/*[@key='101']/*[@key='102']/*[@key='104']/*[@key='105']" fromNamePath="MeterReadingDocument/Channels/Channel/ContiguousIntervalSets/ContiguousIntervalSet/TimePeriod/StartTime" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromKey="103" fromKeyPath="*[@key='3']/*[@key='21']/*[@key='22']/*[@key='101']/*[@key='102']/*[@key='103']" fromNamePath="MeterReadingDocument/Channels/Channel/ContiguousIntervalSets/ContiguousIntervalSet/NumberOfReadings" fromType="profile" toFunction="1" toKey="2" toType="function"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep category="userdefined" id="45ece341-6296-44aa-8ef5-71b34ca8eb3f" key="1" name="MF: Real Time" position="1" type="userdefined" x="10.0" y="10.0">
+          <Inputs>
+            <Input key="1" name="startDate"/>
+            <Input key="2" name="reading"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="realtime"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

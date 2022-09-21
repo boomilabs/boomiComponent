@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KundanGupta/Z - Shishir" componentId="8bb47c5e-1d78-4d4b-ba64-0f415604920a" version="1" name="New HTTP Client Connector Operation" type="connector-action" subType="http" createdDate="2020-09-30T06:37:20Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-09-30T06:37:20Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Z - Shishir" folderId="RjozNDM5Nzkx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="application/json" followRedirects="true" methodType="GET" mimePassthrough="false" requestProfileType="JSON" responseProfileType="JSON" returnErrors="true" returnMimeResponse="true">
+          <requestHeaders/>
+          <pathElements/>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
