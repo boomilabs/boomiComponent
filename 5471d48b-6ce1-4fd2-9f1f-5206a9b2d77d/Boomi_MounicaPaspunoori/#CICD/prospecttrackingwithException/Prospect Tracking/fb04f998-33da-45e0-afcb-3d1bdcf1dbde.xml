@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/#CICD/prospecttrackingwithException/Prospect Tracking" componentId="fb04f998-33da-45e0-afcb-3d1bdcf1dbde" version="1" name="OracleDB" type="connector-settings" subType="database" createdDate="2022-09-21T05:41:38Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2022-09-21T05:41:38Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1MjE3MDEw" copiedFromComponentId="0a1000e9-5672-4251-976f-d2ce8015ba56" copiedFromComponentVersion="1">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/#CICD/prospecttrackingwithException/Prospect Tracking" componentId="fb04f998-33da-45e0-afcb-3d1bdcf1dbde" version="2" name="OracleDB" type="connector-settings" subType="database" createdDate="2022-09-21T05:41:38Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2022-09-22T15:17:40Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1MjE3MDEw">
   <bns:encryptedValues>
     <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
   </bns:encryptedValues>
   <bns:description/>
   <bns:object>
-    <DatabaseConnectionSettings xmlns="" additional="" className="oracle.jdbc.driver.OracleDriver" dbname="XE" driverId="oracle" host="localhost" isPoolEnabled="false" password="f1379ca4ae18b5886f81670210339b3809e6ea409cd236a3b6b76e9dcca390a85ee8d23edfd75c78f481fd7ca84bb4ec1f8d2cb5fb7a4afbffaf2bf31f130e45" port="1521" urlFormat="jdbc:oracle:thin:@{0}:{1}:{2}" username="boomi">
+    <DatabaseConnectionSettings xmlns="" additional="" className="oracle.jdbc.driver.OracleDriver" dbname="XE" driverId="oracle" host="localhost" isPoolEnabled="false" password="2998b8c3498e89df12881744f28672e1f4c12bd7029946bc615e02807d59b294625a757a3d399d76833c45506050ad3c98dcfec4b33c1f699b5e85dca8ef1f15" port="1521" urlFormat="jdbc:oracle:thin:@{0}:{1}:{2}" username="boomi">
       <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
       <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
     </DatabaseConnectionSettings>
