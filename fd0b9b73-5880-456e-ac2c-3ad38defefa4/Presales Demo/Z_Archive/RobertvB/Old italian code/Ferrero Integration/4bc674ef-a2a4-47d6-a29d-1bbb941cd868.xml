@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Z_Archive/RobertvB/Old italian code/Ferrero Integration" componentId="4bc674ef-a2a4-47d6-a29d-1bbb941cd868" version="1" name="Capture_IDOC_TrackingInfo" type="transform.map" createdDate="2021-09-17T15:27:38Z" createdBy="robertvanbentum@boomi.com" modifiedDate="2021-09-17T15:27:38Z" modifiedBy="robertvanbentum@boomi.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="Rjo0MjgzNzAz" copiedFromComponentId="2a8ab4cd-77ac-4cc6-9543-73afe0f4072e" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="f13abfec-1eb8-420e-80c5-9fceca31f7ae" toProfile="0d8b78ab-5a87-472b-8142-3eb4606a4cc2">
+      <Mappings>
+        <Mapping fromFunction="1" fromKey="1" fromType="function" toKey="3" toKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" toNamePath="Record/Elements/IDOCNUM" toType="profile"/>
+        <Mapping fromFunction="1" fromKey="2" fromType="function" toKey="4" toKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" toNamePath="Record/Elements/STATUS" toType="profile"/>
+        <Mapping fromFunction="1" fromKey="3" fromType="function" toKey="5" toKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" toNamePath="Record/Elements/POREF" toType="profile"/>
+        <Mapping fromKey="42" fromKeyPath="*[@key='1']/*[@key='30']/*[@key='36']/*[@key='42']" fromNamePath="RFC_READ_TABLE/DATA/item/WA" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="1" name="String Split" position="1" sumEnabled="false" type="StringSplit" x="10.0" y="10.0">
+          <Inputs>
+            <Input key="1" name="Original String"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="DOCNUM"/>
+            <Output key="2" name="STATUS"/>
+            <Output key="3" name="PONUM"/>
+          </Outputs>
+          <Configuration>
+            <StringSplit delimiter="|"/>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

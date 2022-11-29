@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Z_Archive/RobertvB/Old italian code/Ferrero Integration" componentId="0d8b78ab-5a87-472b-8142-3eb4606a4cc2" version="1" name="FF_TrackFields" type="profile.flatfile" createdDate="2021-09-17T15:28:05Z" createdBy="robertvanbentum@boomi.com" modifiedDate="2021-09-17T15:28:05Z" modifiedBy="robertvanbentum@boomi.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="Rjo0MjgzNzAz" copiedFromComponentId="579d7dba-30d5-406f-8321-9c0e5a3aab85" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <FlatFileProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <GeneralInfo fileType="delimited" useColumnHeaders="false"/>
+        <Options>
+          <DataOptions/>
+          <DelimitedOptions fileDelimiter="stardelimited" removeEscape="false" textQualifier="na"/>
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord detectFormat="numberofcolumns" isNode="true" key="1" name="Record">
+          <FlatFileElements isNode="true" key="2" name="Elements">
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="3" mandatory="false" maxLength="0" minLength="0" name="IDOCNUM" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="4" mandatory="false" maxLength="0" minLength="0" name="STATUS" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="5" mandatory="false" maxLength="0" minLength="0" name="POREF" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+          </FlatFileElements>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </bns:object>
+</bns:Component>

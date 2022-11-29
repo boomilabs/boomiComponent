@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Z_Archive/RobertvB/Old italian code/Ferrero Integration" componentId="3d319f1e-dd47-442d-b064-0cc2402225a2" version="1" name="sendemailOP" type="connector-action" subType="mail" createdDate="2021-09-17T15:27:21Z" createdBy="robertvanbentum@boomi.com" modifiedDate="2021-09-17T15:27:21Z" modifiedBy="robertvanbentum@boomi.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="Rjo0MjgzNzAz" copiedFromComponentId="b685141e-7c33-4531-9a0b-2e8b5f621a48" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <MailSendAction bodyContentType="text/plain" dataContentType="text/html" disposition="inline" from="" subject="" to=""/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

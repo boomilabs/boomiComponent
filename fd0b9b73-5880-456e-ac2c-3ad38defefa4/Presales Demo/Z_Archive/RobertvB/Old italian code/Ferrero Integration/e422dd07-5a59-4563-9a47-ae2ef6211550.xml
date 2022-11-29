@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Z_Archive/RobertvB/Old italian code/Ferrero Integration" componentId="e422dd07-5a59-4563-9a47-ae2ef6211550" version="1" name="getIDOCInfo" type="connector-action" subType="sapjco" createdDate="2021-09-17T15:27:48Z" createdBy="robertvanbentum@boomi.com" modifiedDate="2021-09-17T15:27:48Z" modifiedBy="robertvanbentum@boomi.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="Rjo0MjgzNzAz" copiedFromComponentId="dca34213-3915-4e50-bbbc-69645b8664a2" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <SAPJCOGetAction commitTransaction="false" functionName="RFC_READ_TABLE" requestProfileId="99e62e68-6538-47d1-bee2-c943d3bbbcc6" responseProfileId="f13abfec-1eb8-420e-80c5-9fceca31f7ae"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
