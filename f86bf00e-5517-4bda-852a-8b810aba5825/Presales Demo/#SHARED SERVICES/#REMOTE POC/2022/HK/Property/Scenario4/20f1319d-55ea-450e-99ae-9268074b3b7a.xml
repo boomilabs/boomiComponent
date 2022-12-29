@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#SHARED SERVICES/#REMOTE POC/2022/HK/Property/Scenario4" componentId="20f1319d-55ea-450e-99ae-9268074b3b7a" version="4" name="Get Customer Details" type="connector-action" subType="wssoapclientsdk" createdDate="2022-03-03T06:43:10Z" createdBy="meghana.prabhakar@dell.com" modifiedDate="2022-03-16T10:31:37Z" modifiedBy="meghana.prabhakar@dell.com" deleted="false" currentVersion="true" folderName="Scenario4" folderId="Rjo0NjM3OTgx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="true" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="customerdetails" objectTypeName="customerdetails" operationType="EXECUTE" requestProfile="d9aa7274-3b0e-478d-80f5-bffd86080599" requestProfileType="xml" responseProfile="0887db94-96e8-4d02-9605-0e188c06b954" responseProfileType="xml">
+          <field id="exposeRequestEnvelope" type="boolean" value="true"/>
+          <field id="exposeResponseEnvelope" type="boolean" value="true"/>
+          <field id="attachmentCache" type="component"/>
+          <cookie role="INPUT">
+            <value>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;WebServiceOperation operationName="customerdetails" soapAction="customerdetails"&gt;&lt;WebServiceConnection url="https://apig.boomidemo.com:1443/ws/soap/HKAPI"/&gt;&lt;WebServiceMetaData&gt;&lt;WebServiceDescription serviceName="WebServiceProvider" serviceNamespace="http://www.boomi.com/connector/wss" portName="WebServiceProviderPort" bindingStyle="document" bindingUse="literal" bindingProtocol="soap_1_1"&gt;&lt;Operations&gt;&lt;WebServiceOperation operationName="customerdetails" soapAction="customerdetails" operationUse="literal" operationStyle="document"&gt;&lt;Inputs messageName="customerdetails" messageNamespace="http://www.boomi.com/connector/wss"&gt;&lt;Parameter hidden="false" soapLocation="body"&gt;&lt;name&gt;customerdetails&lt;/name&gt;&lt;elementName&gt;customerdetails&lt;/elementName&gt;&lt;elementNS&gt;http://www.boomi.com/connector/wss&lt;/elementNS&gt;&lt;/Parameter&gt;&lt;/Inputs&gt;&lt;Outputs messageName="customerdetailsResponse" messageNamespace="http://www.boomi.com/connector/wss"&gt;&lt;Parameter hidden="false" soapLocation="body"&gt;&lt;name&gt;customerdetailsResponse&lt;/name&gt;&lt;elementName&gt;customerdetailsResponse&lt;/elementName&gt;&lt;elementNS&gt;http://www.boomi.com/connector/wss&lt;/elementNS&gt;&lt;/Parameter&gt;&lt;/Outputs&gt;&lt;CustomConfiguration&gt;&lt;comBoomiWsRpcOptionalParameters&gt;true&lt;/comBoomiWsRpcOptionalParameters&gt;&lt;comBoomiWsUsingEnvelope&gt;true&lt;/comBoomiWsUsingEnvelope&gt;&lt;/CustomConfiguration&gt;&lt;/WebServiceOperation&gt;&lt;/Operations&gt;&lt;/WebServiceDescription&gt;&lt;/WebServiceMetaData&gt;&lt;/WebServiceOperation&gt;</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="customerdetails">
+                  <FieldList/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

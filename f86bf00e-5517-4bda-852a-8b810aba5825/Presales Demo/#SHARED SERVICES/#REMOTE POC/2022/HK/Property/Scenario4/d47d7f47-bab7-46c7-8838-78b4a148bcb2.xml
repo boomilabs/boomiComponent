@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#SHARED SERVICES/#REMOTE POC/2022/HK/Property/Scenario4" componentId="d47d7f47-bab7-46c7-8838-78b4a148bcb2" version="1" name="Map:xml to json customer" type="transform.map" createdDate="2022-03-03T08:25:27Z" createdBy="meghana.prabhakar@dell.com" modifiedDate="2022-03-03T08:25:27Z" modifiedBy="meghana.prabhakar@dell.com" deleted="false" currentVersion="true" folderName="Scenario4" folderId="Rjo0NjM3OTgx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="0887db94-96e8-4d02-9605-0e188c06b954" toProfile="49f9d867-7e88-47e2-aab0-580f6105f308">
+      <Mappings>
+        <Mapping fromKey="32" fromKeyPath="*[@key='1']/*[@key='26']/*[@key='28']/*[@key='30']/*[@key='32']" fromNamePath="Envelope/Body/customerdetailsResponse/customerdetails/CUST_ID" fromType="profile" toKey="3" toKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" toNamePath="Root/Object/CUST_ID" toType="profile"/>
+        <Mapping fromKey="34" fromKeyPath="*[@key='1']/*[@key='26']/*[@key='28']/*[@key='30']/*[@key='34']" fromNamePath="Envelope/Body/customerdetailsResponse/customerdetails/CustomerNum" fromType="profile" toKey="4" toKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" toNamePath="Root/Object/CustomerNum" toType="profile"/>
+        <Mapping fromKey="36" fromKeyPath="*[@key='1']/*[@key='26']/*[@key='28']/*[@key='30']/*[@key='36']" fromNamePath="Envelope/Body/customerdetailsResponse/customerdetails/CustomerName" fromType="profile" toKey="5" toKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" toNamePath="Root/Object/CustomerName" toType="profile"/>
+        <Mapping fromKey="38" fromKeyPath="*[@key='1']/*[@key='26']/*[@key='28']/*[@key='30']/*[@key='38']" fromNamePath="Envelope/Body/customerdetailsResponse/customerdetails/CustomerType" fromType="profile" toKey="6" toKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" toNamePath="Root/Object/CustomerType" toType="profile"/>
+        <Mapping fromKey="40" fromKeyPath="*[@key='1']/*[@key='26']/*[@key='28']/*[@key='30']/*[@key='40']" fromNamePath="Envelope/Body/customerdetailsResponse/customerdetails/TaxCountry" fromType="profile" toKey="7" toKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" toNamePath="Root/Object/TaxCountry" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

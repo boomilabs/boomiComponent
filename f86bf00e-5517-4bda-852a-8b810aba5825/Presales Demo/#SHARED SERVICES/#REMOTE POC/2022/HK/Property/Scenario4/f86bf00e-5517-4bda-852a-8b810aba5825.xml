@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#SHARED SERVICES/#REMOTE POC/2022/HK/Property/Scenario4" componentId="f86bf00e-5517-4bda-852a-8b810aba5825" version="26" name="InvokeCustomerAPI" type="process" createdDate="2022-03-02T13:14:04Z" createdBy="meghana.prabhakar@dell.com" modifiedDate="2022-12-29T08:50:03Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="Scenario4" folderId="Rjo0NjM3OTgx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="returndocuments_icon" name="shape3" shapetype="returndocuments" userlabel="" x="1008.0" y="48.0">
+          <configuration>
+            <returndocuments label=""/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="map_icon" name="shape4" shapetype="map" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <map mapId="3ffa4f9a-6974-4c33-b832-94c06620015e"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape5" x="416.0" y="57.0">
+              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape5" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="EXECUTE" allowDynamicCredentials="NONE" connectionId="c796bc2d-2ac9-471e-a130-a9971b5987e4" connectorType="wssoapclientsdk" hideSettings="false" operationId="20f1319d-55ea-450e-99ae-9268074b3b7a" parameter-profile="d9aa7274-3b0e-478d-80f5-bffd86080599">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape7" x="608.0" y="57.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape6" shapetype="message" userlabel="" x="48.0" y="208.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>'
+{
+"id":"73"
+}'</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="unset" x="88.0" y="222.0">
+              <linesegment length="0" name="shape6.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="223.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg2" orient="vertical" x="82.0" y="223.0"/>
+              <linesegment length="11" name="shape6.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="223.0"/>
+              <linesegment length="5" name="shape6.dragpoint1.lineseg4" orient="vertical" x="93.0" y="223.0"/>
+              <linesegment length="-5" name="shape6.dragpoint1.lineseg5" orient="horizontal" x="93.0" y="228.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape7" shapetype="map" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <map mapId="d47d7f47-bab7-46c7-8838-78b4a148bcb2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape7.dragpoint1" toShape="shape8" x="800.0" y="57.0">
+              <linesegment length="0" name="shape7.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape7.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape7.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape7.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape7.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="notify_icon" name="shape8" shapetype="notify" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <notify disableEvent="true" enableUserLog="false" perExecution="false" title="">
+              <notifyMessage>{1}</notifyMessage>
+              <notifyMessageLevel>INFO</notifyMessageLevel>
+              <notifyParameters>
+                <parametervalue key="0" valueType="current"/>
+              </notifyParameters>
+            </notify>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape8.dragpoint1" toShape="shape3" x="992.0" y="57.0">
+              <linesegment length="0" name="shape8.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="63.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg2" orient="vertical" x="850.0" y="63.0"/>
+              <linesegment length="79" name="shape8.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="63.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg4" orient="vertical" x="929.0" y="63.0"/>
+              <linesegment length="63" name="shape8.dragpoint1.lineseg5" orient="horizontal" x="929.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

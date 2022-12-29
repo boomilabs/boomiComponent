@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#SHARED SERVICES/#REMOTE POC/2022/HK/Property/Scenario4" componentId="3ffa4f9a-6974-4c33-b832-94c06620015e" version="2" name="Map:JSON to XML" type="transform.map" createdDate="2022-03-03T06:24:30Z" createdBy="meghana.prabhakar@dell.com" modifiedDate="2022-03-03T07:30:00Z" modifiedBy="sidharthachandra@boomi.com" deleted="false" currentVersion="true" folderName="Scenario4" folderId="Rjo0NjM3OTgx">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="1f496533-f12f-4b8b-bb05-ad39cd1a0531" toProfile="d9aa7274-3b0e-478d-80f5-bffd86080599">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="Root/Object/id" fromType="profile" toKey="28" toKeyPath="*[@key='1']/*[@key='22']/*[@key='24']/*[@key='26']/*[@key='28']" toNamePath="Envelope/Body/customerdetails/Customerdetail/Id" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

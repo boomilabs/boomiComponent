@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#SHARED SERVICES/#REMOTE POC/2022/HK/Property/Scenario4" componentId="0887db94-96e8-4d02-9605-0e188c06b954" version="2" name="Web Services SOAP Client customerdetails EXECUTE Response" type="profile.xml" createdDate="2022-03-03T07:23:39Z" createdBy="sidharthachandra@boomi.com" modifiedDate="2022-03-16T10:31:32Z" modifiedBy="meghana.prabhakar@dell.com" deleted="false" currentVersion="true" folderName="Scenario4" folderId="Rjo0NjM3OTgx">
+  <bns:encryptedValues/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="1" maxOccurs="1" minOccurs="1" name="Envelope" typeExpanded="true" typeKey="3" typeName="Envelope" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLNSDeclList>
+            <XMLNSDeclaration defaultNamespace="false" isMappable="false" isNode="true" key="2"/>
+          </XMLNSDeclList>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="24" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Header" typeExpanded="true" typeKey="6" typeName="Header" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="26" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Body" typeExpanded="true" typeKey="9" typeName="Body" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="28" loopingOption="unique" maxOccurs="1" minOccurs="1" name="customerdetailsResponse" typeExpanded="true" typeKey="13" typeName="customerdetailsResponse" typeNamespace="http://www.boomi.com/connector/wss" useNamespace="12" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLNSDeclList>
+                <XMLNSDeclaration defaultNamespace="false" isMappable="false" isNode="true" key="12"/>
+              </XMLNSDeclList>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="30" loopingOption="unique" maxOccurs="1" minOccurs="0" name="customerdetails" typeExpanded="true" typeKey="16" typeName="customerdetails" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="32" loopingOption="unique" maxOccurs="1" minOccurs="0" name="CUST_ID" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="34" loopingOption="unique" maxOccurs="1" minOccurs="0" name="CustomerNum" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="36" loopingOption="unique" maxOccurs="1" minOccurs="0" name="CustomerName" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="38" loopingOption="unique" maxOccurs="1" minOccurs="0" name="CustomerType" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="40" loopingOption="unique" maxOccurs="1" minOccurs="0" name="TaxCountry" typeKey="-1" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="2" name="http://schemas.xmlsoap.org/soap/envelope/" prefix="ns1">
+          <Types>
+            <Type anonymous="false" declarationClass="cType" typeKey="9">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="10" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Body" typeExpanded="false" typeKey="9" typeName="Body" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="11" maxOccurs="1" minOccurs="1" name="customerdetailsResponse" typeExpanded="false" typeKey="13" typeName="customerdetailsResponse" typeNamespace="http://www.boomi.com/connector/wss" useNamespace="12">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="3">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="4" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Envelope" typeExpanded="false" typeKey="3" typeName="Envelope" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="5" maxOccurs="1" minOccurs="0" name="Header" typeExpanded="false" typeKey="6" typeName="Header" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="8" maxOccurs="1" minOccurs="1" name="Body" typeExpanded="false" typeKey="9" typeName="Body" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="6">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="7" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Header" typeExpanded="false" typeKey="6" typeName="Header" typeNamespace="http://schemas.xmlsoap.org/soap/envelope/" useNamespace="2" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+        <XMLNamespace key="12" name="http://www.boomi.com/connector/wss" prefix="ns2">
+          <Types>
+            <Type anonymous="false" declarationClass="cType" typeKey="13">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="14" loopingOption="unique" maxOccurs="1" minOccurs="1" name="customerdetailsResponse" typeExpanded="false" typeKey="13" typeName="customerdetailsResponse" typeNamespace="http://www.boomi.com/connector/wss" useNamespace="12" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="15" maxOccurs="1" minOccurs="0" name="customerdetails" typeExpanded="false" typeKey="16" typeName="customerdetails" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+        <XMLNamespace key="-1" name="Empty Namespace" prefix="ns3">
+          <Types>
+            <Type anonymous="false" declarationClass="cType" typeKey="16">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="17" loopingOption="unique" maxOccurs="1" minOccurs="0" name="customerdetails" typeExpanded="false" typeKey="16" typeName="customerdetails" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="18" maxOccurs="1" minOccurs="0" name="CUST_ID" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="19" maxOccurs="1" minOccurs="0" name="CustomerNum" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="20" maxOccurs="1" minOccurs="0" name="CustomerName" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="21" maxOccurs="1" minOccurs="0" name="CustomerType" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="22" maxOccurs="1" minOccurs="0" name="TaxCountry" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+      </Namespaces>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>
