@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="22" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-09T02:01:36Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="false" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="23" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-02-03T05:32:29Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
@@ -84,7 +84,7 @@
     <Overrides xmlns="">
       <Connections>
         <ConnectionOverride id="d40b69b9-ef35-4436-933e-4b9103e6bc4d">
-          <field id="url" label="URL" overrideable="false" xpath="SalesforceSettings/@url"/>
+          <field id="url" label="URL" overrideable="true" xpath="SalesforceSettings/@url"/>
           <field id="user" label="User" overrideable="false" xpath="SalesforceSettings/AuthSettings/@user"/>
           <field id="password" label="Password" overrideable="false" xpath="SalesforceSettings/AuthSettings/@password"/>
           <field id="maxActiveConnections" label="Maximum Concurrent Connections" overrideable="false" xpath="SalesforceSettings/@maxActiveConnections"/>
