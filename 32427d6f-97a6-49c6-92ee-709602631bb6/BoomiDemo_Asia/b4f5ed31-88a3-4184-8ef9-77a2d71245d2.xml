@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia" componentId="b4f5ed31-88a3-4184-8ef9-77a2d71245d2" version="1" name="New Database Connector Operation" type="connector-action" subType="database" createdDate="2022-11-08T04:00:33Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-08T04:00:33Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="BoomiDemo_Asia" folderId="Rjo1MDc3Mjc1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseSendAction batchCount="0" commitOption="commitprofile" enableBatching="true">
+          <WriteProfile profileId="147a652a-8876-464a-af0c-994300318d05"/>
+        </DatabaseSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

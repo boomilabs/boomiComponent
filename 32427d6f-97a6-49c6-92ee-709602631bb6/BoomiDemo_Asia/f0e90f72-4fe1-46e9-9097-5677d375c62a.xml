@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia" componentId="f0e90f72-4fe1-46e9-9097-5677d375c62a" version="1" name="AWS Asia DB testdb" type="connector-settings" subType="database" createdDate="2022-11-08T03:48:06Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-08T03:48:06Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="BoomiDemo_Asia" folderId="Rjo1MDc3Mjc1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="com.mysql.jdbc.Driver" dbname="testdb" driverId="mysql" host="mysql-db.czvkta0nzqbf.ap-southeast-1.rds.amazonaws.com" isPoolEnabled="false" password="09b4b181c41c34205370769d49745fee3ddb5a498cc6118a742323e28fe02de3ceb76b795ae3413fac9fb75de1960a9164a5f55310564c12e37c70fb5b3c8519" port="3306" urlFormat="jdbc:mysql://{0}:{1}/{2}{3}" username="admin">
+      <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>
