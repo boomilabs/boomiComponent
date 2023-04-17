@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#DEMO CENTRAL/TOOLKIT - REUSABLE COMPONENTS/Event Streams" componentId="3d3b4e49-2550-4b43-812e-667254ec4d8b" version="3" name="ES Connec - for Remote Build Services" type="connector-settings" subType="officialboomi-X3979C-events-prod" createdDate="2023-04-17T07:22:50Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2023-04-17T08:08:19Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Event Streams" folderId="Rjo1NzI1OTQ4">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="environmentToken" type="password" value="af88923da6bb377402bb57f9ef49c972dbf8e6d6e95b23e952b51a26837f0f2cd4848e2c0b241db6637e58d1237ffbbbf96528067779d6cc2bfda81ce73ee068"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

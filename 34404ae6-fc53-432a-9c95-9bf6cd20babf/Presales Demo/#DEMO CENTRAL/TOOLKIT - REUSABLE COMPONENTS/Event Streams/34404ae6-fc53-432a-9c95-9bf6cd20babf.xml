@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#DEMO CENTRAL/TOOLKIT - REUSABLE COMPONENTS/Event Streams" componentId="34404ae6-fc53-432a-9c95-9bf6cd20babf" version="5" name="Listener: Event Streams(GTO-TEST-TOPIC)" type="process" createdDate="2023-04-05T10:22:16Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2023-04-17T08:22:22Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Event Streams" folderId="Rjo1NzI1OTQ4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="true" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Listen" allowDynamicCredentials="NONE" connectionId="3d3b4e49-2550-4b43-812e-667254ec4d8b" connectorType="officialboomi-X3979C-events-prod" hideSettings="false" operationId="f03b3841-7435-4fea-887f-5ac7de0b333e">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="returndocuments_icon" name="shape2" shapetype="returndocuments" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <returndocuments label=""/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
