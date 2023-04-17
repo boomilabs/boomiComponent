@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/#common" componentId="351a96c4-8c51-4715-9728-1abc0e0c0c87" version="4" name="Get sfdc Accounts" type="connector-action" subType="salesforce" createdDate="2022-07-28T03:50:29Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-30T03:43:01Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="#common" folderId="Rjo1MDgxNDk0">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/#common" componentId="351a96c4-8c51-4715-9728-1abc0e0c0c87" version="4" name="Get sfdc Accounts" type="connector-action" subType="salesforce" createdDate="2022-07-28T03:50:29Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-30T03:43:01Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="false" folderName="#common" folderId="Rjo1MDgxNDk0">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
