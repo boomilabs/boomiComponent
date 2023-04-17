@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/work in progress" componentId="fa4be70b-3f24-4ee8-8eee-d5dd94454525" version="2" name="Ambanks Workshop" type="connector-settings" subType="solacetpp-VMLLNA-solace-prod" createdDate="2023-04-16T05:28:01Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-04-16T05:28:55Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="work in progress" folderId="Rjo1MDgxNTAw">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="username" type="string" value="solace-cloud-client"/>
+      <field id="password" type="password" value="18bf3b6242f465ffcf6fcaf43f9ce2baa4d025aaf5648f31dbd53f4c5ec974503ec1f9018ed967dc9c0e319c0778a8a272f4f3d1baee28dce683dea58950a9d2"/>
+      <field id="vpn_name" type="string" value="boomi-bkk"/>
+      <field id="host" type="string" value="mrxorg0m9c6ab.messaging.solace.cloud"/>
+      <field id="eventPortalApiToken" type="password" value="aeaaf34aca733ef19aac274ffb85af11f1c16230a95810a7bf96dc316caae0231a49a674ca599f9a6dc68b7b125f4282a9dd141852bc50981f305d0e646a6280"/>
+      <field id="customProperties" type="customproperties">
+        <customProperties/>
+      </field>
+      <field id="eventPortalApiVersion" type="string" value="v2.0"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

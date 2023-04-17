@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/work in progress" componentId="6efbf442-ca90-4b69-a897-57c97e856172" version="1" name="Publish to Redemption queue" type="connector-action" subType="solacetpp-VMLLNA-solace-prod" createdDate="2023-04-17T06:43:17Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-04-17T06:43:17Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="work in progress" folderId="Rjo1MDgxNTAw">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="SolaceSend" operationType="CREATE" requestProfileType="xml" responseProfileType="xml">
+          <field id="mode" type="string" value="DIRECT"/>
+          <field id="endpointType" type="string" value="queue"/>
+          <field id="destination" type="string" value="LoyaltyRedemptionRequest"/>
+          <field id="dynamicCreate" type="boolean" value="false"/>
+          <field id="eventLink" type="string" value=""/>
+          <field id="customProperties" type="customproperties">
+            <customProperties/>
+          </field>
+          <Options/>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

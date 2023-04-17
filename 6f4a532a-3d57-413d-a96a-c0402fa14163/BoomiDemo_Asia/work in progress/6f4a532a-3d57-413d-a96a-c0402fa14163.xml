@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/work in progress" componentId="6f4a532a-3d57-413d-a96a-c0402fa14163" version="7" name="Solace Publish to Redemption queue - working" type="process" createdDate="2023-04-17T06:43:35Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-04-17T09:48:16Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="work in progress" folderId="Rjo1MDgxNTAw">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape2" shapetype="message" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>'
+{
+  "customer_id": "12345",
+  "loyalty_program_id": "67890",
+  "points_to_redeem": 500,
+  "reward_item_id": "ITEM001",
+  "transaction_id": "TXN001",
+  "transaction_date": "2023-04-12",
+  "transaction_channel": "online",
+  "transaction_location": "New York",
+  "transaction_currency": "USD"
+}
+'</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="416.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape3" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="fa4be70b-3f24-4ee8-8eee-d5dd94454525" connectorType="solacetpp-VMLLNA-solace-prod" hideSettings="false" operationId="6efbf442-ca90-4b69-a897-57c97e856172">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="608.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" x="624.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
