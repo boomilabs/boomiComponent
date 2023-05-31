@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/**Deckers/Prospect Tracking" componentId="5adbbd0d-c9a1-4586-9c4d-a96b86ccf62c" version="1" name="SalesforceTo Database" type="transform.map" createdDate="2023-05-31T01:04:09Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2023-05-31T01:04:09Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1ODg5MjQy" copiedFromComponentId="2d0d93ed-35e7-4271-bcaa-b5aa71a58398" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="2529c864-b293-418c-a4fc-2b222f1f8e8b" toProfile="35648c43-baaa-4ce0-b03a-79b2d4c41cc5">
+      <Mappings>
+        <Mapping fromKey="19" fromKeyPath="*[@key='1']/*[@key='19']" fromNamePath="Contact/MailingStreet" fromType="profile" toKey="4" toKeyPath="*[@key='2']/*[@key='3']/*[@key='4']" toNamePath="Statement/Fields/ADDRESSLINE1" toType="profile"/>
+        <Mapping fromKey="20" fromKeyPath="*[@key='1']/*[@key='20']" fromNamePath="Contact/MailingCity" fromType="profile" toKey="6" toKeyPath="*[@key='2']/*[@key='3']/*[@key='6']" toNamePath="Statement/Fields/CITY" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='7']" fromNamePath="Contact/FirstName" fromType="profile" toKey="7" toKeyPath="*[@key='2']/*[@key='3']/*[@key='7']" toNamePath="Statement/Fields/CONTACTFIRSTNAME" toType="profile"/>
+        <Mapping fromKey="6" fromKeyPath="*[@key='1']/*[@key='6']" fromNamePath="Contact/LastName" fromType="profile" toKey="8" toKeyPath="*[@key='2']/*[@key='3']/*[@key='8']" toNamePath="Statement/Fields/CONTACTLASTNAME" toType="profile"/>
+        <Mapping fromKey="23" fromKeyPath="*[@key='1']/*[@key='23']" fromNamePath="Contact/MailingCountry" fromType="profile" toKey="9" toKeyPath="*[@key='2']/*[@key='3']/*[@key='9']" toNamePath="Statement/Fields/COUNTRY" toType="profile"/>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='9']" fromNamePath="Contact/Name" fromType="profile" toKey="11" toKeyPath="*[@key='2']/*[@key='3']/*[@key='11']" toNamePath="Statement/Fields/CUSTOMERNAME" toType="profile"/>
+        <Mapping fromKey="28" fromKeyPath="*[@key='1']/*[@key='28']" fromNamePath="Contact/Phone" fromType="profile" toKey="13" toKeyPath="*[@key='2']/*[@key='3']/*[@key='13']" toNamePath="Statement/Fields/PHONE" toType="profile"/>
+        <Mapping fromKey="22" fromKeyPath="*[@key='1']/*[@key='22']" fromNamePath="Contact/MailingPostalCode" fromType="profile" toKey="14" toKeyPath="*[@key='2']/*[@key='3']/*[@key='14']" toNamePath="Statement/Fields/POSTALCODE" toType="profile"/>
+        <Mapping fromKey="21" fromKeyPath="*[@key='1']/*[@key='21']" fromNamePath="Contact/MailingState" fromType="profile" toKey="16" toKeyPath="*[@key='2']/*[@key='3']/*[@key='16']" toNamePath="Statement/Fields/STATE" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Contact/AccountId" fromType="profile" toKey="12" toKeyPath="*[@key='2']/*[@key='3']/*[@key='12']" toNamePath="Statement/Fields/CUSTOMERNUMBER" toType="profile"/>
+        <Mapping fromKey="2" fromKeyPath="*[@key='1']/*[@key='2']" fromNamePath="Contact/Id" fromType="profile" toKey="17" toKeyPath="*[@key='2']/*[@key='3']/*[@key='17']" toNamePath="Statement/Fields/ID" toType="profile"/>
+        <Mapping fromKey="35" fromKeyPath="*[@key='1']/*[@key='35']" fromNamePath="Contact/Email" fromType="profile" toKey="19" toKeyPath="*[@key='2']/*[@key='3']/*[@key='19']" toNamePath="Statement/Fields/EMAIL" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/**Deckers/Prospect Tracking" componentId="e70c384a-0a8e-4fcf-bc44-d9c032fc4724" version="1" name="OracleDB 3" type="connector-settings" subType="database" createdDate="2023-05-31T01:04:07Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2023-05-31T01:04:07Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1ODg5MjQy" copiedFromComponentId="bf48a8ce-3b4f-4a25-8324-9624bf6e5489" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="oracle.jdbc.driver.OracleDriver" dbname="XE" driverId="custom" host="localhost1" isPoolEnabled="false" password="309b1a716d503f62bf1dc7807e34fb2c5ef8b7d5d296a0b80cca3e901a05031691c63315d28b4bf49d2c0274fe649fd81b92a1bb271ee47304ac4f45ccfdb66f" port="1521" urlFormat="jdbc:oracle:thin:@//localhost:1521/orcl.lan" username="boomi">
+      <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>

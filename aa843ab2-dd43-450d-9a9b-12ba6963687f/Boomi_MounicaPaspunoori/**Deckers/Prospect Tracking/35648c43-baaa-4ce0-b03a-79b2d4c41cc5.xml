@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/**Deckers/Prospect Tracking" componentId="35648c43-baaa-4ce0-b03a-79b2d4c41cc5" version="1" name="OracleDBProfile" type="profile.db" createdDate="2023-05-31T01:04:08Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2023-05-31T01:04:08Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1ODg5MjQy" copiedFromComponentId="bb5f2ece-ae64-4edb-a826-e4d357ee9af4" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DatabaseProfile xmlns="" strict="true" version="2">
+      <ProfileProperties>
+        <DatabaseGeneralInfo executionType="dbwrite"/>
+      </ProfileProperties>
+      <DataElements>
+        <DBStatement isNode="true" key="2" name="Statement" statementType="dynamicinsert" storedProcedure="" tableName="CUSTOMERS">
+          <DBFields isNode="true" key="3" name="Fields">
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="4" mandatory="false" name="ADDRESSLINE1">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="5" mandatory="false" name="ADDRESSLINE2">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="6" mandatory="false" name="CITY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="7" mandatory="false" name="CONTACTFIRSTNAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="8" mandatory="false" name="CONTACTLASTNAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="9" mandatory="false" name="COUNTRY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="18" mandatory="false" name="CREATION_DATE">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="10" mandatory="false" name="CREDITLIMIT">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="11" mandatory="false" name="CUSTOMERNAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="12" mandatory="false" name="CUSTOMERNUMBER">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="19" mandatory="false" name="EMAIL">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="20" mandatory="false" name="HUBID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="17" mandatory="false" name="ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="21" mandatory="false" name="LAST_UPDATED_DATE">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="13" mandatory="false" name="PHONE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="14" mandatory="false" name="POSTALCODE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="25" mandatory="false" name="PRICE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="26" mandatory="false" name="PRODUCTNAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="15" mandatory="false" name="SALESREPEMPLOYEENUMBER">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="16" mandatory="false" name="STATE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="22" mandatory="false" name="STATUS">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="23" mandatory="false" name="TYPE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="24" mandatory="false" name="WORKFROMHOME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+          </DBFields>
+          <sql/>
+        </DBStatement>
+      </DataElements>
+    </DatabaseProfile>
+  </bns:object>
+</bns:Component>

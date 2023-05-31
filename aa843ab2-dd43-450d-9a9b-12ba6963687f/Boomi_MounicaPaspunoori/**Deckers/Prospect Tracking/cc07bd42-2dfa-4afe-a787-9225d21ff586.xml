@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/**Deckers/Prospect Tracking" componentId="cc07bd42-2dfa-4afe-a787-9225d21ff586" version="1" name="OracleDBConnectOperation" type="connector-action" subType="database" createdDate="2023-05-31T01:04:08Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2023-05-31T01:04:08Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1ODg5MjQy" copiedFromComponentId="7ef1e9fc-c1ec-41bb-8692-efd74a303535" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseSendAction batchCount="0" commitOption="commitprofile" enableBatching="false">
+          <WriteProfile profileId="35648c43-baaa-4ce0-b03a-79b2d4c41cc5"/>
+        </DatabaseSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

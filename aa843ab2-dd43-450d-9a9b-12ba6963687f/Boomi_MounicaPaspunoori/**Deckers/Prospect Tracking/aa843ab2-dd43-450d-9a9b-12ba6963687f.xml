@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_MounicaPaspunoori/**Deckers/Prospect Tracking" componentId="aa843ab2-dd43-450d-9a9b-12ba6963687f" version="2" name="Test Prospect Tracking_D1" type="process" createdDate="2023-05-31T01:04:08Z" createdBy="mounica.paspunoori@boomi.com" modifiedDate="2023-05-31T01:07:50Z" modifiedBy="mounica.paspunoori@boomi.com" deleted="false" currentVersion="true" folderName="Prospect Tracking" folderId="Rjo1ODg5MjQy">
+  <bns:encryptedValues/>
+  <bns:description>To get Accounts from Salesforce to Oracle DB</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="4f25e1f4-d869-404f-8520-b50944ac6ec4" connectorType="salesforce" hideSettings="false" operationId="be73f8df-6e06-4f00-a0b1-c5c40a9a49b6" parameter-profile="EMBEDDED|salesforceparameterchooser|be73f8df-6e06-4f00-a0b1-c5c40a9a49b6">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="CustomerId" key="0" valueType="static">
+                  <staticparameter staticproperty="0034S000006mQgnQAE"/>
+                </parametervalue>
+              </parameters>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape3" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="e70c384a-0a8e-4fcf-bc44-d9c032fc4724" connectorType="database" hideSettings="false" operationId="cc07bd42-2dfa-4afe-a787-9225d21ff586" parameter-profile="EMBEDDED|databaseparameterchooser|35648c43-baaa-4ce0-b03a-79b2d4c41cc5|cc07bd42-2dfa-4afe-a787-9225d21ff586">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape6" x="608.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape3" shapetype="map" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <map mapId="5adbbd0d-c9a1-4586-9c4d-a96b86ccf62c"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape2" x="416.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape6" shapetype="stop" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="" allowScheduleOverride="false">
+      <Connections>
+        <ConnectionOverride id="75991bbe-e3ee-4f99-960b-b5a7c0d095f5">
+          <field id="driverId" label="Driver Type" overrideable="false" xpath="DatabaseConnectionSettings/@driverId"/>
+          <field id="username" label="User" overrideable="true" xpath="DatabaseConnectionSettings/@username"/>
+          <field id="password" label="Password" overrideable="true" xpath="DatabaseConnectionSettings/@password"/>
+          <field id="host" label="Host" overrideable="true" xpath="DatabaseConnectionSettings/@host"/>
+          <field id="port" label="Port" overrideable="true" xpath="DatabaseConnectionSettings/@port"/>
+          <field id="dbname" label="DB Name" overrideable="true" xpath="DatabaseConnectionSettings/@dbname"/>
+          <field id="additional" label="Additional Options" overrideable="false" xpath="DatabaseConnectionSettings/@additional"/>
+          <field id="className" label="Class Name" overrideable="false" xpath="DatabaseConnectionSettings/@className"/>
+          <field id="urlFormat" label="Connection URL" overrideable="true" xpath="DatabaseConnectionSettings/@urlFormat"/>
+          <field id="writeSQLToFile" label="Write SQL To File?" overrideable="false" xpath="DatabaseConnectionSettings/WriteOptions/@writeSQLToFile"/>
+          <field id="sqlFilePath" label="SQL File Path" overrideable="false" xpath="DatabaseConnectionSettings/WriteOptions/@sqlFilePath"/>
+          <field id="isPoolEnabled" label="Enable Pooling" overrideable="false" xpath="DatabaseConnectionSettings/@isPoolEnabled"/>
+          <field id="maxActive" label="Maximum Connections (0 for unlimited)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxActive"/>
+          <field id="minIdle" label="Minimum Connections" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@minIdle"/>
+          <field id="maxIdleTime" label="Maximum Idle Time (sec)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxIdleTime"/>
+          <field id="exhaustedAction" label="When Exhausted Action" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@exhaustedAction"/>
+          <field id="maxWait" label="Maximum Wait Time (sec)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxWait"/>
+          <field id="testOnBorrow" label="Test Connection When Borrowing From Pool" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testOnBorrow"/>
+          <field id="testOnReturn" label="Test Connection When Returning To Pool" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testOnReturn"/>
+          <field id="testIdle" label="Test Idle Connections" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testIdle"/>
+          <field id="maxIdle" label="Validation Query" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@validationQuery"/>
+        </ConnectionOverride>
+        <ConnectionOverride id="4f25e1f4-d869-404f-8520-b50944ac6ec4">
+          <field id="url" label="URL" overrideable="true" xpath="SalesforceSettings/@url"/>
+          <field id="user" label="User" overrideable="true" xpath="SalesforceSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="true" xpath="SalesforceSettings/AuthSettings/@password"/>
+          <field id="maxActiveConnections" label="Maximum Concurrent Connections" overrideable="false" xpath="SalesforceSettings/@maxActiveConnections"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <objectDefinition connectionId="4f25e1f4-d869-404f-8520-b50944ac6ec4" connectorType="salesforce" id="4f25e1f4-d869-404f-8520-b50944ac6ec4Account" name="Salesforce Account (Salesforce_test)" objectType="Account" userDefined="false">
+            <profiles/>
+          </objectDefinition>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides/>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>
