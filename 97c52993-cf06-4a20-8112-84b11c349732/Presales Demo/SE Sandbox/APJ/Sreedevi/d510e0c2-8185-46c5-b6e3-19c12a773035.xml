@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/APJ/Sreedevi" componentId="d510e0c2-8185-46c5-b6e3-19c12a773035" version="2" name="GitHub | Create File" type="connector-action" subType="http" createdDate="2023-05-17T05:10:38Z" createdBy="sreedevi.katabattuni@boomi.com" modifiedDate="2023-05-17T05:13:04Z" modifiedBy="sreedevi.katabattuni@boomi.com" deleted="false" currentVersion="true" folderName="Sreedevi" folderId="Rjo0NDEwMzUz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="text/plain" followRedirects="false" methodType="PUT" mimePassthrough="false" requestProfileType="NONE" responseProfileType="NONE" returnErrors="true" returnMimeResponse="false">
+          <requestHeaders/>
+          <pathElements>
+            <element key="2000000" name="repos/"/>
+            <element isVariable="false" key="2000001" name="Sreedevi-Katabattuni/"/>
+            <element key="2000002" name="CICD/"/>
+            <element isVariable="false" key="2000003" name="contents/"/>
+            <element isVariable="true" key="2000004" name="ddp_gitFilename"/>
+          </pathElements>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

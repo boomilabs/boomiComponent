@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/AMER/Daniel Wille/Daniel's DevOps/GitHub" componentId="c5633bf7-9646-43c4-9cf1-cc5252d78fa1" version="5" name="Map | Create GitHub File" type="transform.map" createdDate="2022-04-22T14:23:05Z" createdBy="daniel.wille@boomi.com" modifiedDate="2022-04-22T16:37:17Z" modifiedBy="daniel.wille@boomi.com" deleted="false" currentVersion="true" folderName="GitHub" folderId="Rjo0Nzk1ODQ3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="a7152b50-8ab3-4c10-964b-e0232c31fa98" toProfile="c94a37d6-7dbe-4035-957e-5bd33cc3f119">
+      <Mappings>
+        <Mapping fromFunction="4" fromKey="3" fromType="function" toKey="4" toKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" toNamePath="Root/Object/content" toType="profile"/>
+        <Mapping fromFunction="2" fromKey="3" fromType="function" toKey="3" toKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" toNamePath="Root/Object/message" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="2" name="Get Dynamic Process Property" position="2" sumEnabled="false" type="PropertyGet" x="10.0" y="133.0">
+          <Inputs>
+            <Input default="dpp_commitMessage" key="1" name="Property Name"/>
+            <Input key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" category="ProcessProperty" key="4" name="Get Document Property" position="4" sumEnabled="false" type="DocumentPropertyGet" x="10.0" y="256.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="3" name="Dynamic Document Property - ddp_content"/>
+          </Outputs>
+          <Configuration>
+            <DocumentProperty defaultValue="" persist="false" propertyId="dynamicdocument.ddp_content" propertyName="Dynamic Document Property - ddp_content"/>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

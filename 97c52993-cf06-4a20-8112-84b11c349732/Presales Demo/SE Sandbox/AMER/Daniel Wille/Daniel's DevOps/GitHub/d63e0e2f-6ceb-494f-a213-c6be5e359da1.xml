@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/AMER/Daniel Wille/Daniel's DevOps/GitHub" componentId="d63e0e2f-6ceb-494f-a213-c6be5e359da1" version="4" name="Github | dwille-boomi" type="connector-settings" subType="http" createdDate="2022-04-22T14:23:05Z" createdBy="daniel.wille@boomi.com" modifiedDate="2022-04-22T15:11:09Z" modifiedBy="daniel.wille@boomi.com" deleted="false" currentVersion="true" folderName="GitHub" folderId="Rjo0Nzk1ODQ3">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//HttpSettings/OAuth2Settings/credentials/@accessToken" isSet="true"/>
+    <bns:encryptedValue path="//HttpSettings/OAuth2Settings/credentials/@clientSecret" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <HttpSettings xmlns="" authenticationType="OAUTH2" url="https://api.github.com">
+      <AuthSettings user=""/>
+      <OAuthSettings accessToken="" accessTokenURL="" authorizationURL="" consumerKey="" realm="" requestTokenURL="" signatureMethod="SHA1" suppressBlankAccessToken="false"/>
+      <OAuth2Settings grantType="code" refreshAuthScheme="req_body_params_auth">
+        <credentials accessToken="c139c2e5a4be03ffe65056c3badcf20957cd19f89868c9ea8c9c484d5973d806a2c0befbbf30d40c5f292dc7fb420d9e4e539e9fedfdd3020332a594cac3e321" clientId="de70704ebc303dafa412" clientSecret="0e7aabd06b2ee2d33f0d68f134ce6499621df42b281d6879e9dd703ba2263a70a20500d6f26765395af8467f911836367d6cae1268543e22abbdb5f8bcfb4973"/>
+        <authorizationTokenEndpoint url="http://github.com/login/oauth/authorize">
+          <sslOptions/>
+        </authorizationTokenEndpoint>
+        <authorizationParameters/>
+        <accessTokenEndpoint url="https://github.com/login/oauth/access_token">
+          <sslOptions/>
+        </accessTokenEndpoint>
+        <accessTokenParameters/>
+        <scope>repo</scope>
+      </OAuth2Settings>
+      <AwsSettings>
+        <credentials>
+          <accessKeyId/>
+          <awsService>s3</awsService>
+          <customService/>
+          <awsRegion>ap-northeast-1</awsRegion>
+          <customRegion/>
+        </credentials>
+      </AwsSettings>
+      <SSLOptions clientauth="false" trustServerCert="false"/>
+    </HttpSettings>
+  </bns:object>
+</bns:Component>

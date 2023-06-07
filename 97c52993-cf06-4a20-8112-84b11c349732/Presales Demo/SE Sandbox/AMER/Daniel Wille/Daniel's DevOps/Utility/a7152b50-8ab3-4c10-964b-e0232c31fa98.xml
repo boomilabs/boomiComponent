@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/AMER/Daniel Wille/Daniel's DevOps/Utility" componentId="a7152b50-8ab3-4c10-964b-e0232c31fa98" version="1" name="Blank Profile" type="profile.flatfile" createdDate="2022-04-22T14:23:05Z" createdBy="daniel.wille@boomi.com" modifiedDate="2022-04-22T14:23:05Z" modifiedBy="daniel.wille@boomi.com" deleted="false" currentVersion="true" folderName="Utility" folderId="Rjo0Nzk1ODU3" copiedFromComponentId="08707eaf-25b7-41f4-963b-e691616cf350" copiedFromComponentVersion="82">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <FlatFileProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <GeneralInfo fileType="delimited" useColumnHeaders="false"/>
+        <Options>
+          <DataOptions/>
+          <DelimitedOptions fileDelimiter="stardelimited" removeEscape="false" textQualifier="na"/>
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord detectFormat="numberofcolumns" isNode="true" key="1" name="Record">
+          <FlatFileElements isNode="true" key="2" name="Elements"/>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/AMER/Daniel Wille/Daniel's DevOps/GitHub" componentId="bf7e2d41-037b-4e7a-8f4b-11f8fd901a94" version="4" name="GitHub | Create File" type="connector-action" subType="http" createdDate="2022-04-22T14:23:05Z" createdBy="daniel.wille@boomi.com" modifiedDate="2022-04-22T16:22:19Z" modifiedBy="daniel.wille@boomi.com" deleted="false" currentVersion="true" folderName="GitHub" folderId="Rjo0Nzk1ODQ3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="text/plain" followRedirects="false" methodType="PUT" mimePassthrough="false" requestProfileType="NONE" responseProfileType="NONE" returnErrors="true" returnMimeResponse="false">
+          <requestHeaders/>
+          <pathElements>
+            <element key="2000000" name="repos/"/>
+            <element isVariable="false" key="2000001" name="dwille-boomi/"/>
+            <element key="2000002" name="test_repo/"/>
+            <element isVariable="false" key="2000003" name="contents/"/>
+            <element isVariable="true" key="2000004" name="ddp_gitFilename"/>
+          </pathElements>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SE Sandbox/AMER/Daniel Wille/Daniel's DevOps/GitHub" componentId="c94a37d6-7dbe-4035-957e-5bd33cc3f119" version="3" name="GitHub | Create File Request" type="profile.json" createdDate="2022-04-22T14:23:05Z" createdBy="daniel.wille@boomi.com" modifiedDate="2022-04-22T16:37:11Z" modifiedBy="daniel.wille@boomi.com" deleted="false" currentVersion="true" folderName="GitHub" folderId="Rjo0Nzk1ODQ3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <JSONProfile xmlns="">
+      <DataElements>
+        <JSONRootValue dataType="character" isMappable="false" isNode="true" key="1" name="Root" validateData="false">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <JSONObject isMappable="false" isNode="true" key="2" name="Object">
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="3" name="message" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="4" name="content" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <Qualifiers>
+                <QualifierList/>
+              </Qualifiers>
+            </JSONObjectEntry>
+          </JSONObject>
+          <Qualifiers>
+            <QualifierList/>
+          </Qualifiers>
+        </JSONRootValue>
+      </DataElements>
+      <tagLists/>
+    </JSONProfile>
+  </bns:object>
+</bns:Component>
