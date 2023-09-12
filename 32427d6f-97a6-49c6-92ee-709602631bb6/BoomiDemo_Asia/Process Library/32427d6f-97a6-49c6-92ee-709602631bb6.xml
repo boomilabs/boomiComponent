@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="22" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-11-09T02:01:36Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="false" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="26" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-06-30T02:14:34Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
     <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
       <shapes>
-        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="46.0">
           <configuration>
             <noaction/>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="224.0" y="57.0">
-              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
-              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
-              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
-              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
-              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
-            </dragpoint>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="224.0" y="56.0"/>
           </dragpoints>
         </shape>
         <shape image="connectoraction_icon" name="shape4" shapetype="connectoraction" userlabel="" x="240.0" y="48.0">
@@ -31,13 +25,7 @@
             </connectoraction>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape4.dragpoint1" toShape="shape8" x="416.0" y="57.0">
-              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
-              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
-              <linesegment length="79" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
-              <linesegment length="0" name="shape4.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
-              <linesegment length="63" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
-            </dragpoint>
+            <dragpoint name="shape4.dragpoint1" toShape="shape8" x="416.0" y="56.0"/>
           </dragpoints>
         </shape>
         <shape image="connectoraction_icon" name="shape7" shapetype="connectoraction" userlabel="" x="624.0" y="48.0">
@@ -48,13 +36,7 @@
             </connectoraction>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape7.dragpoint1" toShape="shape10" x="800.0" y="57.0">
-              <linesegment length="0" name="shape7.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
-              <linesegment length="0" name="shape7.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
-              <linesegment length="79" name="shape7.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
-              <linesegment length="0" name="shape7.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
-              <linesegment length="63" name="shape7.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
-            </dragpoint>
+            <dragpoint name="shape7.dragpoint1" toShape="shape12" x="800.0" y="56.0"/>
           </dragpoints>
         </shape>
         <shape image="map_icon" name="shape8" shapetype="map" userlabel="" x="432.0" y="48.0">
@@ -62,16 +44,10 @@
             <map mapId="4e88b7d2-aba4-4a85-9ce0-c477c9b08db2"/>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape8.dragpoint1" toShape="shape7" x="608.0" y="57.0">
-              <linesegment length="0" name="shape8.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
-              <linesegment length="0" name="shape8.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
-              <linesegment length="79" name="shape8.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
-              <linesegment length="0" name="shape8.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
-              <linesegment length="63" name="shape8.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
-            </dragpoint>
+            <dragpoint name="shape8.dragpoint1" toShape="shape7" x="608.0" y="56.0"/>
           </dragpoints>
         </shape>
-        <shape image="stop_icon" name="shape10" shapetype="stop" userlabel="" x="816.0" y="48.0">
+        <shape image="stop_icon" name="shape12" shapetype="stop" x="816.0" y="48.0">
           <configuration>
             <stop continue="true"/>
           </configuration>
@@ -84,7 +60,7 @@
     <Overrides xmlns="">
       <Connections>
         <ConnectionOverride id="d40b69b9-ef35-4436-933e-4b9103e6bc4d">
-          <field id="url" label="URL" overrideable="false" xpath="SalesforceSettings/@url"/>
+          <field id="url" label="URL" overrideable="true" xpath="SalesforceSettings/@url"/>
           <field id="user" label="User" overrideable="false" xpath="SalesforceSettings/AuthSettings/@user"/>
           <field id="password" label="Password" overrideable="false" xpath="SalesforceSettings/AuthSettings/@password"/>
           <field id="maxActiveConnections" label="Maximum Concurrent Connections" overrideable="false" xpath="SalesforceSettings/@maxActiveConnections"/>
