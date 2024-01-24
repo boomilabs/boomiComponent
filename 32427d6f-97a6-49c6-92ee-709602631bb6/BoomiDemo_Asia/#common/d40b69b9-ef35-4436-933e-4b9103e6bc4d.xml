@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/#common" componentId="d40b69b9-ef35-4436-933e-4b9103e6bc4d" version="4" name="(Shared ANZ) - dell boomi apj" type="connector-settings" subType="salesforce" createdDate="2022-07-28T03:36:15Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-08-02T04:31:05Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="#common" folderId="Rjo1MDgxNDk0">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/#common" componentId="d40b69b9-ef35-4436-933e-4b9103e6bc4d" version="4" name="(Shared ANZ) - dell boomi apj" type="connector-settings" subType="salesforce" createdDate="2022-07-28T03:36:15Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2022-08-02T04:31:05Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="false" folderName="#common" folderId="Rjo1MDgxNDk0">
   <bns:encryptedValues>
     <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
   </bns:encryptedValues>

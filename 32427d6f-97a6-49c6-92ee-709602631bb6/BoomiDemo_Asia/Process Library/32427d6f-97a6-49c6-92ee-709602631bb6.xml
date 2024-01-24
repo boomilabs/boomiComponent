@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="26" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-06-30T02:14:34Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="true" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="BoomiDemo_Asia/Process Library" componentId="32427d6f-97a6-49c6-92ee-709602631bb6" version="26" name="Synchronisation Customer sfdc to db" type="process" createdDate="2022-10-29T06:00:09Z" createdBy="dang.nguyen@boomi.com" modifiedDate="2023-06-30T02:14:34Z" modifiedBy="dang.nguyen@boomi.com" deleted="false" currentVersion="false" folderName="Process Library" folderId="Rjo1MDc3Mjc2">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
