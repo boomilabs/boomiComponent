@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="b89eac40-d12f-434c-9c17-45c522756b0f" version="4" name="JimCopresalesESconnection" type="connector-settings" subType="officialboomi-X3979C-events-prod" createdDate="2023-06-01T14:02:27Z" createdBy="james.stanway@boomi.com" modifiedDate="2024-06-11T18:51:22Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="environmentToken" type="password" value="6f750067914b4e0f6e6b445a8e38f936279142e70ce862118e3448e9e344c27291967294ca49a4baf298a0372823c3e35073800fe98c25aec7d439e176fe6f0e"/>
+      <field id="connectionType" type="string" value="Yes"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

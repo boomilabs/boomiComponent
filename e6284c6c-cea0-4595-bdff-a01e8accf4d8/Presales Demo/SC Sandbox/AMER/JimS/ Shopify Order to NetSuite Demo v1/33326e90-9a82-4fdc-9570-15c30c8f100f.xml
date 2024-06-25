@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="33326e90-9a82-4fdc-9570-15c30c8f100f" version="1" name="Shopify Customer Name + Id" type="transform.function" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="94788151-0035-4ad3-80e7-7d78fcd8aeba" copiedFromComponentVersion="1" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs>
+        <Input key="1" name="name"/>
+        <Input key="2" name="customerId"/>
+      </Inputs>
+      <Outputs>
+        <Output key="1" name="Customer Name + Id"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="1" name="String Prepend" position="1" sumEnabled="false" type="StringPrepend" x="188.0" y="275.0">
+          <Inputs>
+            <Input default="id" key="1" name="Original String"/>
+            <Input default="" key="2" name="Fix to Length"/>
+            <Input default="ShopifyId: " key="3" name="Char to Prepend"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="2" name="String Concat" position="2" sumEnabled="false" type="StringConcat" x="450.0" y="450.0">
+          <Inputs>
+            <Input default="" key="2" name="shopify+Id"/>
+            <Input default="" key="3" name="name"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration>
+            <StringConcat delimiter=" - "/>
+          </Configuration>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="2" fromKey="2" fromNamePath="String Concat/Result" fromType="function" toFunction="0" toKey="1" toNamePath="Editor/Customer Name + Id" toType="function"/>
+        <Mapping fromFunction="0" fromKey="2" fromNamePath="Editor/customerId" fromType="function" toFunction="1" toKey="1" toNamePath="String Prepend/Original String (id) " toType="function"/>
+        <Mapping fromFunction="1" fromKey="2" fromNamePath="String Prepend/Result" fromType="function" toFunction="2" toKey="2" toNamePath="String Concat/shopify+Id" toType="function"/>
+        <Mapping fromFunction="0" fromKey="1" fromNamePath="Editor/name" fromType="function" toFunction="2" toKey="3" toNamePath="String Concat/name" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

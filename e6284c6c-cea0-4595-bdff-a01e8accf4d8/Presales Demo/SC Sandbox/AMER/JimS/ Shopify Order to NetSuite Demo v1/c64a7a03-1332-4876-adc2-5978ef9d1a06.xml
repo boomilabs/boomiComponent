@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="c64a7a03-1332-4876-adc2-5978ef9d1a06" version="1" name="JimcoTopicOperation" type="connector-action" subType="officialboomi-X3979C-events-prod" createdDate="2023-06-01T13:48:18Z" createdBy="james.stanway@boomi.com" modifiedDate="2023-06-01T13:48:18Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="PRODUCE" operationType="EXECUTE" requestProfileType="binary" responseProfileType="none">
+          <field id="topic" type="string" value="jimco"/>
+          <field id="producerAccessMode" type="string" value="Shared"/>
+          <field id="compressionType" type="string" value="NONE"/>
+          <field id="messageProperties" type="customproperties">
+            <customProperties/>
+          </field>
+          <Options/>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

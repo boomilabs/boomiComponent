@@ -1,0 +1,198 @@
+{
+  "job": "Update Environment Extensions",
+  "extensionJson": {
+    "@type": "EnvironmentExtensions",
+    "connections": {
+      "@type": "Connections",
+      "connection": [
+        {
+          "@type": "Connection",
+          "field": [
+            {
+              "@type": "field",
+              "id": "url",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "user",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "password",
+              "value": "#{}#",
+              "usesEncryption": "true",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "accountNumber",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "consumerKey",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "consumerSecretEncrypted",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "consumerSecret",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "tokenId",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "tokenSecretEncrypted",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "tokenSecret",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "applicationId",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "version",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "numRetries",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "maxConnections",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            }
+          ],
+          "id": "92c39112-e932-4825-9c9e-6369c3846c1e",
+          "name": "(Shared) TSTDRV1673343 - se@boomi.com 2018_1"
+        },
+        {
+          "@type": "Connection",
+          "field": [
+            {
+              "@type": "field",
+              "id": "storeBaseUrl",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "authType",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "accessToken",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/credentials/@clientId",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/credentials/@clientSecret",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/authorizationTokenEndpoint/@url",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/accessTokenEndpoint/@url",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/credentials/@accessToken",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            },
+            {
+              "@type": "field",
+              "id": "oauthOptions/OAuth2Config/scope",
+              "value": "",
+              "usesEncryption": "false",
+              "useDefault": false
+            }
+          ],
+          "id": "9d2b6856-4cdb-4e28-814f-0a5c85fa494f",
+          "name": "(Shared)Boomi Demo Store Shopify(Updated)"
+        }
+      ]
+    },
+    "processProperties": {
+      "@type": "OverrideProcessProperties",
+      "ProcessProperty": []
+    },
+    "properties": {
+      "@type": "",
+      "property": []
+    },
+    "environmentId": "",
+    "partial": "true",
+    "extensionGroupId": "",
+    "id": ""
+  }
+}

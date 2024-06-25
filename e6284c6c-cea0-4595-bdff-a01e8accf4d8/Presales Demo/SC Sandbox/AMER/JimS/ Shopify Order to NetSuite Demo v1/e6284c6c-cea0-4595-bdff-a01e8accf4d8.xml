@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="e6284c6c-cea0-4595-bdff-a01e8accf4d8" version="29" name="Ecommerce: Shopify Order to NetSuite Demo JimDEmo" type="process" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2023-11-13T21:41:17Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description>NetSuite UI - 
+Username: se@boomi.com
+Password: D3llB00m1!
+Security Questions:
+What was your childhood nickname? boomi1
+In what city did you meet your spouse? boomi2
+what is your maternal grandmother's name ? boomi3 
+What city were you born? boomi2
+</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="46.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="9d2b6856-4cdb-4e28-814f-0a5c85fa494f" connectorType="shopify" hideSettings="false" operationId="e8e9dfc8-7568-463e-9e14-dc567e22eb62" parameter-profile="EMBEDDED|genericparameterchooser|e8e9dfc8-7568-463e-9e14-dc567e22eb62">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="created_at_min=" name="created_at_min=" valueType="date">
+                  <dateparameter dateparametertype="relative" datetimemask="yyyy-MM-dd'T'HH:mm:ssZ">
+                    <datedelta sign="minus" unit="hours" value="5"/>
+                  </dateparameter>
+                </parametervalue>
+              </parameters>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape5" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="processcall_icon" name="shape3" shapetype="processcall" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <processcall abort="true" processId="3b3e073a-ddb2-403a-9615-02ad69ad8570" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="branch_icon" name="shape5" shapetype="branch" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <branch numBranches="2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape5.dragpoint1" text="1" toShape="shape3" x="416.0" y="56.0"/>
+            <dragpoint identifier="2" name="shape5.dragpoint2" text="2" toShape="shape8" x="416.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape6" shapetype="stop" userlabel="" x="624.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape8" shapetype="connectoraction" userlabel="" x="432.0" y="208.0">
+          <configuration>
+            <connectoraction actionType="Produce" allowDynamicCredentials="NONE" connectionId="b89eac40-d12f-434c-9c17-45c522756b0f" connectorType="officialboomi-X3979C-events-prod" hideSettings="false" operationId="c64a7a03-1332-4876-adc2-5978ef9d1a06">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape8.dragpoint1" toShape="shape6" x="608.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape9" shapetype="message" userlabel="" x="144.0" y="272.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>''{
+	"id": 4904410349619,
+	"admin_graphql_api_id": "gid://shopify/Order/4904410349619",
+	"app_id": 580111,
+	"browser_ip": "165.225.59.86",
+	"buyer_accepts_marketing": false,
+	"cancel_reason": null,
+	"cancelled_at": null,
+	"cart_token": "c1-c4204167a912c75579bbb2050e028091",
+	"checkout_id": 29817291276339,
+	"checkout_token": "bc8e0a5eb0ccb4444b30ff15c07bfc22",
+	"client_details": {
+		"accept_language": "en-US",
+		"browser_height": null,
+		"browser_ip": "165.225.59.86",
+		"browser_width": null,
+		"session_hash": null,
+		"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+	},
+	"closed_at": null,
+	"company": null,
+	"confirmed": true,
+	"contact_email": "jstanwa@comcast.net",
+	"created_at": "2023-11-13T13:54:54-05:00",
+	"currency": "USD",
+	"current_subtotal_price": "100000.00",
+	"current_subtotal_price_set": {
+		"shop_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		}
+	},
+	"current_total_additional_fees_set": null,
+	"current_total_discounts": "0.00",
+	"current_total_discounts_set": {
+		"shop_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		}
+	},
+	"current_total_duties_set": null,
+	"current_total_price": "100000.00",
+	"current_total_price_set": {
+		"shop_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		}
+	},
+	"current_total_tax": "0.00",
+	"current_total_tax_set": {
+		"shop_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		}
+	},
+	"customer_locale": "en-US",
+	"device_id": null,
+	"discount_codes": [],
+	"email": "jstanwa@comcast.net",
+	"estimated_taxes": false,
+	"financial_status": "authorized",
+	"fulfillment_status": null,
+	"landing_site": "/cart",
+	"landing_site_ref": null,
+	"location_id": null,
+	"merchant_of_record_app_id": null,
+	"name": "#2446",
+	"note": null,
+	"note_attributes": [],
+	"number": 1446,
+	"order_number": 2446,
+	"order_status_url": "https://boomi-demo-store.myshopify.com/428802099/orders/1512408cc78a99152415ec73a2ba521f/authenticate?key=b559cbbe7283358a46b44d4fd1317004",
+	"original_total_additional_fees_set": null,
+	"original_total_duties_set": null,
+	"payment_gateway_names": [
+		"bogus"
+	],
+	"phone": null,
+	"presentment_currency": "USD",
+	"processed_at": "2023-11-13T13:54:52-05:00",
+	"reference": "17bfb500fa7dec41f8a8812aa5f2cc6c",
+	"referring_site": "",
+	"source_identifier": "17bfb500fa7dec41f8a8812aa5f2cc6c",
+	"source_name": "web",
+	"source_url": null,
+	"subtotal_price": "100000.00",
+	"subtotal_price_set": {
+		"shop_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		}
+	},
+	"tags": "",
+	"tax_lines": [],
+	"taxes_included": false,
+	"test": true,
+	"token": "1512408cc78a99152415ec73a2ba521f",
+	"total_discounts": "0.00",
+	"total_discounts_set": {
+		"shop_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		}
+	},
+	"total_line_items_price": "100000.00",
+	"total_line_items_price_set": {
+		"shop_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		}
+	},
+	"total_outstanding": "0.00",
+	"total_price": "100000.00",
+	"total_price_set": {
+		"shop_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "100000.00",
+			"currency_code": "USD"
+		}
+	},
+	"total_shipping_price_set": {
+		"shop_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		}
+	},
+	"total_tax": "0.00",
+	"total_tax_set": {
+		"shop_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		},
+		"presentment_money": {
+			"amount": "0.00",
+			"currency_code": "USD"
+		}
+	},
+	"total_tip_received": "0.00",
+	"total_weight": 0,
+	"updated_at": "2023-11-13T13:54:55-05:00",
+	"user_id": null,
+	"billing_address": {
+		"first_name": "James",
+		"address1": "2004 stanford ave",
+		"phone": null,
+		"city": "st paul",
+		"zip": "55105",
+		"province": "Minnesota",
+		"country": "United States",
+		"last_name": "Stanway",
+		"address2": null,
+		"company": null,
+		"latitude": 44.9323069,
+		"longitude": -93.18520950000002,
+		"name": "James Stanway",
+		"country_code": "US",
+		"province_code": "MN"
+	},
+	"customer": {
+		"id": 6091268718643,
+		"email": "jstanwa@comcast.net",
+		"accepts_marketing": false,
+		"created_at": "2023-03-28T11:18:30-04:00",
+		"updated_at": "2023-11-13T13:54:55-05:00",
+		"first_name": "James",
+		"last_name": "Stanway",
+		"state": "disabled",
+		"note": null,
+		"verified_email": true,
+		"multipass_identifier": null,
+		"tax_exempt": false,
+		"phone": null,
+		"email_marketing_consent": {
+			"state": "not_subscribed",
+			"opt_in_level": "single_opt_in",
+			"consent_updated_at": null
+		},
+		"sms_marketing_consent": null,
+		"tags": "",
+		"currency": "USD",
+		"accepts_marketing_updated_at": "2023-03-28T11:18:30-04:00",
+		"marketing_opt_in_level": null,
+		"tax_exemptions": [],
+		"admin_graphql_api_id": "gid://shopify/Customer/6091268718643",
+		"default_address": {
+			"id": 7617781137459,
+			"customer_id": 6091268718643,
+			"first_name": "James",
+			"last_name": "Stanway",
+			"company": null,
+			"address1": "2004 stanford ave",
+			"address2": null,
+			"city": "ST Paul",
+			"province": "Minnesota",
+			"country": "United States",
+			"zip": "55105",
+			"phone": null,
+			"name": "James Stanway",
+			"province_code": "MN",
+			"country_code": "US",
+			"country_name": "United States",
+			"default": true
+		}
+	},
+	"discount_applications": [],
+	"fulfillments": [],
+	"line_items": [
+		{
+			"id": 12198991757363,
+			"admin_graphql_api_id": "gid://shopify/LineItem/12198991757363",
+			"fulfillable_quantity": 1,
+			"fulfillment_service": "manual",
+			"fulfillment_status": null,
+			"gift_card": false,
+			"grams": 0,
+			"name": "Widget",
+			"price": "100000.00",
+			"price_set": {
+				"shop_money": {
+					"amount": "100000.00",
+					"currency_code": "USD"
+				},
+				"presentment_money": {
+					"amount": "100000.00",
+					"currency_code": "USD"
+				}
+			},
+			"product_exists": true,
+			"product_id": 515042508851,
+			"properties": [],
+			"quantity": 1,
+			"requires_shipping": false,
+			"sku": "WGT",
+			"taxable": false,
+			"title": "Widget",
+			"total_discount": "0.00",
+			"total_discount_set": {
+				"shop_money": {
+					"amount": "0.00",
+					"currency_code": "USD"
+				},
+				"presentment_money": {
+					"amount": "0.00",
+					"currency_code": "USD"
+				}
+			},
+			"variant_id": 6948607197235,
+			"variant_inventory_management": "shopify",
+			"variant_title": null,
+			"vendor": "Boomi Demo Store",
+			"tax_lines": [],
+			"duties": [],
+			"discount_allocations": []
+		}
+	],
+	"payment_terms": null,
+	"refunds": [],
+	"shipping_address": null,
+	"shipping_lines": []
+}'</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape9.dragpoint1" toShape="unset" x="276.0" y="282.0"/>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="">
+      <Connections>
+        <ConnectionOverride id="92c39112-e932-4825-9c9e-6369c3846c1e">
+          <field id="url" label="URL" overrideable="true"/>
+          <field id="user" label="User" overrideable="true"/>
+          <field id="password" label="Password" overrideable="true"/>
+          <field id="accountNumber" label="Account Number" overrideable="true"/>
+          <field id="consumerKey" label="Consumer Key" overrideable="true"/>
+          <field id="consumerSecretEncrypted" label="Consumer Secret" overrideable="true"/>
+          <field id="consumerSecret" label="Consumer Secret (Deprecated)" overrideable="true"/>
+          <field id="tokenId" label="Token Id" overrideable="true"/>
+          <field id="tokenSecretEncrypted" label="Token Secret" overrideable="true"/>
+          <field id="tokenSecret" label="Token Secret (Deprecated)" overrideable="true"/>
+          <field id="applicationId" label="Application Id" overrideable="true"/>
+          <field id="version" label="Version" overrideable="true"/>
+          <field id="numRetries" label="Number of Retries" overrideable="true"/>
+          <field id="maxConnections" label="Maximum Number of Concurrent Connections" overrideable="true"/>
+        </ConnectionOverride>
+        <ConnectionOverride id="9d2b6856-4cdb-4e28-814f-0a5c85fa494f">
+          <field id="storeBaseUrl" label="Store Base URL" overrideable="true"/>
+          <field id="authType" label="Authentication Type" overrideable="true"/>
+          <field id="accessToken" label="Access token" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/credentials/@clientId" label="Client ID" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/credentials/@clientSecret" label="Client Secret" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/authorizationTokenEndpoint/@url" label="Authorization Token URL" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/accessTokenEndpoint/@url" label="Access Token URL" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/credentials/@accessToken" label="Access Token" overrideable="true"/>
+          <field id="oauthOptions/OAuth2Config/scope" label="Scope" overrideable="true"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <objectDefinition connectionId="92c39112-e932-4825-9c9e-6369c3846c1e" connectorType="netsuitesdk" id="92c39112-e932-4825-9c9e-6369c3846c1eCustomer-upsert-listsRelationships" name="NetSuite Customer-upsert-listsRelationships ((Shared) NetSuite (se@boomi.com)-2018)" objectType="Customer-upsert-listsRelationships" userDefined="false">
+            <profiles>
+              <profile id="da9657d8-f3ed-4cc4-9662-ee9d95b2ee82" name="NetSuite Customer UPSERT Request" operationId="d19fda67-37e1-4356-b0ba-8bc0d3e6b54a" operationProfilePath="//GenericOperationConfig/@requestProfile" operationProfileRole="input" operationType="UPSERT" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <objectDefinition connectionId="92c39112-e932-4825-9c9e-6369c3846c1e" connectorType="netsuitesdk" id="92c39112-e932-4825-9c9e-6369c3846c1eSalesOrder-upsert-transactionsSales" name="NetSuite SalesOrder-upsert-transactionsSales ((Shared) NetSuite (se@boomi.com)-2018)" objectType="SalesOrder-upsert-transactionsSales" userDefined="false">
+            <profiles>
+              <profile id="5346f643-b5a3-48aa-a649-06bd6966cf54" name="NetSuite Sales Order UPSERT Request" operationId="36d25c63-259c-4457-bf7e-efd275301ed0" operationProfilePath="//GenericOperationConfig/@requestProfile" operationProfileRole="input" operationType="UPSERT" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <objectDefinition connectionId="9d2b6856-4cdb-4e28-814f-0a5c85fa494f" connectorType="shopify" id="9d2b6856-4cdb-4e28-814f-0a5c85fa494fORDER" name="Shopify ORDER ((Shared)Boomi Demo Store Shopify)" objectType="ORDER" userDefined="false">
+            <profiles/>
+          </objectDefinition>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides>
+        <CrossReferenceOverride id="8146235c-8e94-4234-ac8b-ac9be60e2fbc" name="NS Country Codes"/>
+      </CrossReferenceOverrides>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="9100c17f-4ca6-4fa3-8c7a-27d3704fa645" version="1" name="Shopify Order to NetSuite Sales Order" type="transform.map" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="8e962253-4661-4b13-a90d-d7a29e5f79df" copiedFromComponentVersion="4" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="e6edc0ba-bf65-4d36-9258-52b25663d52c" toProfile="5346f643-b5a3-48aa-a649-06bd6966cf54">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="Root/Object/id" fromType="profile" toKey="473" toKeyPath="*[@key='1']/*[@key='473']" toNamePath="SalesOrder/externalId" toType="profile"/>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="Root/Object/id" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='133']" fromNamePath="Root/Object/customer/Object/id" fromType="profile" toKey="787" toKeyPath="*[@key='1']/*[@key='481']/*[@key='787']" toNamePath="SalesOrder/entity/externalId" toType="profile"/>
+        <Mapping fromKey="144" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='144']" fromNamePath="Root/Object/customer/Object/note" fromType="profile" toKey="525" toKeyPath="*[@key='1']/*[@key='525']" toNamePath="SalesOrder/memo" toType="profile"/>
+        <Mapping fromKey="74" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='57']/*[@key='58']/*[@key='59']/*[@key='60']/*[@key='74']" fromNamePath="Root/Object/line_items/Array/ArrayElement1/Object/name" fromType="profile" toFunction="2" toKey="1" toType="function"/>
+        <Mapping fromFunction="2" fromKey="2" fromType="function" toKey="1685" toKeyPath="*[@key='1']/*[@key='765']/*[@key='1135']/*[@key='1235']/*[@key='1685']" toNamePath="SalesOrder/itemList/item/item/internalId" toType="profile"/>
+        <Mapping fromKey="70" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='57']/*[@key='58']/*[@key='59']/*[@key='60']/*[@key='70']" fromNamePath="Root/Object/line_items/Array/ArrayElement1/Object/product_id" fromType="profile" toKey="1687" toKeyPath="*[@key='1']/*[@key='765']/*[@key='1135']/*[@key='1235']/*[@key='1687']" toNamePath="SalesOrder/itemList/item/item/externalId" toType="profile"/>
+        <Mapping fromKey="64" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='57']/*[@key='58']/*[@key='59']/*[@key='60']/*[@key='64']" fromNamePath="Root/Object/line_items/Array/ArrayElement1/Object/quantity" fromType="profile" toKey="1245" toKeyPath="*[@key='1']/*[@key='765']/*[@key='1135']/*[@key='1245']" toNamePath="SalesOrder/itemList/item/quantity" toType="profile"/>
+        <Mapping fromKey="65" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='57']/*[@key='58']/*[@key='59']/*[@key='60']/*[@key='65']" fromNamePath="Root/Object/line_items/Array/ArrayElement1/Object/price" fromType="profile" toKey="1259" toKeyPath="*[@key='1']/*[@key='765']/*[@key='1135']/*[@key='1259']" toNamePath="SalesOrder/itemList/item/amount" toType="profile"/>
+        <Mapping fromFunction="3" fromKey="2" fromType="function" toKey="491" toKeyPath="*[@key='1']/*[@key='491']" toNamePath="SalesOrder/tranDate" toType="profile"/>
+        <Mapping fromKey="6" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" fromNamePath="Root/Object/created_at" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="1" name="Set Document Property" position="1" sumEnabled="false" type="DocumentPropertySet" x="10.0" y="10.0">
+          <Inputs>
+            <Input default="" key="1" name="Dynamic Document Property - shopifyOrderId"/>
+          </Inputs>
+          <Outputs/>
+          <Configuration>
+            <DocumentProperty defaultValue="" persist="false" propertyId="dynamicdocument.shopifyOrderId" propertyName="Dynamic Document Property - shopifyOrderId"/>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Connector" key="2" name="Connector Call" position="2" sumEnabled="false" type="ConnectorCall" x="10.0" y="83.0">
+          <Inputs>
+            <Input default="" key="1" name="itemId="/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="@internalId (NonInventorySaleItem/@internalId)"/>
+          </Outputs>
+          <Configuration>
+            <ConnectorCall actionType="QUERY" connectionId="92c39112-e932-4825-9c9e-6369c3846c1e" connectorType="netsuitesdk" enforceSingleResult="true" operationId="7f963e28-8dae-44f4-a091-d92206b285ce" output-profile="62656dc7-6eb8-40f5-adf8-22e69f98d983" parameter-profile="EMBEDDED|genericparameterchooser|7f963e28-8dae-44f4-a091-d92206b285ce">
+              <Input index="1" key="1" name="itemId="/>
+              <Output index="2" key="265" name="@internalId (NonInventorySaleItem/@internalId)"/>
+            </ConnectorCall>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Date" key="3" name="Date Format" position="3" sumEnabled="false" type="DateFormat" x="10.0" y="186.0">
+          <Inputs>
+            <Input default="" key="1" name="Date String"/>
+            <Input default="yyyy-MM-dd'T'HH:mm:ssZZ" key="2" name="Input Mask"/>
+            <Input default="yyyyMMdd HHmmss.SSS" key="3" name="Output Mask"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

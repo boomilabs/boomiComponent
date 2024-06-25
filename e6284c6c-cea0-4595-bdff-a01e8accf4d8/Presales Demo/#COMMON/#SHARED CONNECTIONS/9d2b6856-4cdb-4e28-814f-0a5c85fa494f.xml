@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#COMMON/#SHARED CONNECTIONS" componentId="9d2b6856-4cdb-4e28-814f-0a5c85fa494f" version="5" name="(Shared)Boomi Demo Store Shopify(Updated)" type="connector-settings" subType="shopify" createdDate="2019-04-11T20:30:21Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2023-10-27T16:31:34Z" modifiedBy="john.villani@boomi.com" deleted="false" currentVersion="true" folderName="#SHARED CONNECTIONS" folderId="RjoxMTgyNzI3" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="storeBaseUrl" type="string" value="https://boomi-demo-store.myshopify.com"/>
+      <field id="authType" type="string" value="ACCESS_TOKEN"/>
+      <field id="oauthOptions" type="oauth">
+        <OAuth2Config grantType="code">
+          <credentials accessToken="{&quot;scope&quot;:&quot;write_products,write_customers,write_orders,write_fulfillments&quot;,&quot;access_token&quot;:&quot;SokxWq7FVbf7DnT56uKv4F9ShJ15pmn9LVc8hva5JIO/hpBVgeW5X/lo6tCf1kurkMDsCUPe38nwoYAok1G+hZ1aDK96jzVfvqs7H+t4WisrCm6EyR692DfTYHwAYZtCAAFFD5O/tP0S2k94lMwrVTDts3oRyL5VVdkpvLekzXE=&quot;}" clientId="af7d297d08ddd7cf407fe88703a75954" clientSecret="d8NOkQ5fbDS4kxr1PLBg8t58YiTr0LH3o2SeP2I/SquQWyap8iP3mver5KuQs6agyqpuUwwX080JrJFzpIOhFX7Df9l3dUhcnFuABdUd+mDmc0HSbxdNtJA/v5uPu2KO2acSvDAqiQs+iqBArdWkAck40mEsrlQ9RaYbqdt9zHk="/>
+          <authorizationTokenEndpoint url="https://boomi-demo-store.myshopify.com/admin/oauth/authorize">
+            <sslOptions/>
+          </authorizationTokenEndpoint>
+          <authorizationParameters/>
+          <accessTokenEndpoint url="https://boomi-demo-store.myshopify.com/admin/oauth/access_token">
+            <sslOptions/>
+          </accessTokenEndpoint>
+          <accessTokenParameters/>
+          <scope>read_products, write_products, read_customers, write_customers, read_orders, write_orders,                    read_fulfillments, write_fulfillments                </scope>
+          <jwtParameters>
+            <expiration>0</expiration>
+          </jwtParameters>
+        </OAuth2Config>
+      </field>
+      <field id="accessToken" type="password" value="bee9cb57c07ce9dbf2efb20fb44e4229f863961d7ea0b9697bf45a366b004133adf2058e4ff0a393dad4a84d09cc3171c12f9643b6f3bc895618639b0c49f510"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

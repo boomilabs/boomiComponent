@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="8146235c-8e94-4234-ac8b-ac9be60e2fbc" version="1" name="NS Country Codes" type="crossref" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="bc8a812c-18b5-4180-befc-d272685e075e" copiedFromComponentVersion="1" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" columns="6" ref1label="Country" ref2label="NS_Country" ref3label="NS_CountryCode" ref4label="Workday" ref5label="Reference 5" ref6label="Reference 6">
+      <Rows>
+        <row atom="Default" atomid="-1" ref1="U.S.A." ref2="_unitedStates" ref3="US" ref4="USA" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="USA" ref2="_unitedStates" ref3="US" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="US" ref2="_unitedStates" ref3="US" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="NULL" ref2="NULL" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Zimbabwe" ref2="_zimbabwe" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Zambia" ref2="_zambia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Yugoslavia" ref2="_yugoslavia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Yemen" ref2="_yemen" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Western Samoa" ref2="_westernSamoa" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Western Sahara" ref2="_westernSahara" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Wallis and Futuna Islands" ref2="_wallisAndFutunaIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Virgin Islands, USA" ref2="_virginIslandsUSA" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Virgin Islands, British" ref2="_virginIslandsBritish" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Vietnam" ref2="_vietnam" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Venezuela" ref2="_venezuela" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Vanuatu" ref2="_vanuatu" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Uzbekistan" ref2="_uzbekistan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="US Minor Outlying Islands" ref2="_uSMinorOutlyingIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Uruguay" ref2="_uruguay" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="United States" ref2="_unitedStates" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="United Kingdom (GB)" ref2="_unitedKingdomGB" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="United Kingdom" ref2="_unitedKingdomGB" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="United Arab Emirates" ref2="_unitedArabEmirates" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Ukraine" ref2="_ukraine" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Uganda" ref2="_uganda" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tuvalu" ref2="_tuvalu" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Turks and Caicos Islands" ref2="_turksAndCaicosIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Turkmenistan" ref2="_turkmenistan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Turkey" ref2="_turkey" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tunisia" ref2="_tunisia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Trinidad and Tobago" ref2="_trinidadAndTobago" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tonga" ref2="_tonga" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tokelau" ref2="_tokelau" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Togo" ref2="_togo" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Thailand" ref2="_thailand" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tanzania" ref2="_tanzania" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Tajikistan" ref2="_tajikistan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Taiwan" ref2="_taiwan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Syrian Arab Republic" ref2="_syrianArabRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Switzerland" ref2="_switzerland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Sweden" ref2="_sweden" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Swaziland" ref2="_swaziland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Svalbard and Jan Mayen Islands" ref2="_svalbardAndJanMayenIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Suriname" ref2="_suriname" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Sudan" ref2="_sudan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="St. Pierre and Miquelon" ref2="_stPierreAndMiquelon" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="St. Helena" ref2="_stHelena" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Sri Lanka" ref2="_sriLanka" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Spain" ref2="_spain" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="South Georgia" ref2="_southGeorgia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="South Africa" ref2="_southAfrica" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Somalia" ref2="_somalia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Solomon Islands" ref2="_solomonIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Slovenia" ref2="_slovenia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Slovak Republic" ref2="_slovakRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Singapore" ref2="_singapore" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Sierra Leone" ref2="_sierraLeone" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Seychelles" ref2="_seychelles" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Serbia And Montenegro" ref2="_serbiaAndMontenegro" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Senegal" ref2="_senegal" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Saudi Arabia" ref2="_saudiArabia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Sao Tome and Principe" ref2="_saoTomeAndPrincipe" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="San Marino" ref2="_sanMarino" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Saint Vincent and the Grenadines" ref2="_saintVincentAndTheGrenadines" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Saint Lucia" ref2="_saintLucia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Saint Kitts and Nevis" ref2="_saintKittsAndNevis" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Rwanda" ref2="_rwanda" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Russian Federation" ref2="_russianFederation" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Romania" ref2="_romania" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Reunion Island" ref2="_reunionIsland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Qatar" ref2="_qatar" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Puerto Rico" ref2="_puertoRico" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Portugal" ref2="_portugal" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Poland" ref2="_poland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Pitcairn Island" ref2="_pitcairnIsland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Philppines" ref2="_philippines" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Peru" ref2="_peru" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Paraguay" ref2="_paraguay" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Papua New Guinea" ref2="_papuaNewGuinea" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Panama" ref2="_panama" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Palestinian Territories" ref2="_palestinianTerritories" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Palau" ref2="_palau" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Pakistan" ref2="_pakistan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Oman" ref2="_oman" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Norway" ref2="_norway" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Northern Mariana Islands" ref2="_northernMarianaIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Norfolk Island" ref2="_norfolkIsland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Niue" ref2="_niue" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Nigeria" ref2="_nigeria" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Niger" ref2="_niger" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Nicaragua" ref2="_nicaragua" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="New Zealand" ref2="_newZealand" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="New Caledonia" ref2="_newCaledonia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Netherlands Antilles" ref2="_netherlandsAntilles" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Netherlands" ref2="_netherlands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Nepal" ref2="_nepal" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Nauru" ref2="_nauru" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Namibia" ref2="_namibia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Myanmar" ref2="_myanmar" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mozambique" ref2="_mozambique" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Morocco" ref2="_morocco" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Montserrat" ref2="_montserrat" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mongolia" ref2="_mongolia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Monaco" ref2="_monaco" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Moldova, Republic of" ref2="_moldovaRepublicOf" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Micronesia, Federal State of" ref2="_micronesiaFederalStateOf" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mexico" ref2="_mexico" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mayotte" ref2="_mayotte" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mauritius" ref2="_mauritius" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mauritania" ref2="_mauritania" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Martinique" ref2="_martinique" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Marshall Islands" ref2="_marshallIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Malta" ref2="_malta" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Mali" ref2="_mali" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Maldives" ref2="_maldives" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Malaysia" ref2="_malaysia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Malawi" ref2="_malawi" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Madagascar" ref2="_madagascar" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Macedonia" ref2="_macedonia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Macau" ref2="_macau" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Luxembourg" ref2="_luxembourg" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Lithuania" ref2="_lithuania" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Liechtenstein" ref2="_liechtenstein" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Libyan Arab Jamahiriya" ref2="_libyanArabJamahiriya" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Liberia" ref2="_liberia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Lesotho" ref2="_lesotho" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Lebanon" ref2="_lebanon" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Latvia" ref2="_latvia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Lao, People.s Democratic Republic" ref2="_laoPeoplesDemocraticRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Krgyzstan" ref2="_kyrgyzstan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Kuwait" ref2="_kuwait" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Korea, Republic of" ref2="_koreaRepublicOf" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Korea, Democratic People.s Republic" ref2="_koreaDemocraticPeoplesRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Kiribati" ref2="_kiribati" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Kenya" ref2="_kenya" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Kazakhstan" ref2="_kazakhstan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Jordan" ref2="_jordan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Jersey" ref2="_jersey" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Japan" ref2="_japan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Jamaica" ref2="_jamaica" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Italy" ref2="_italy" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Israel" ref2="_israel" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Isle of Man" ref2="_isleOfMan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Ireland" ref2="_ireland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Iraq" ref2="_iraq" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Iran, Islamic Republic of" ref2="_iranIslamicRepublicOf" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Indonesia" ref2="_indonesia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="India" ref2="_india" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Iceland" ref2="_iceland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Hungary" ref2="_hungary" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Hong Kong" ref2="_hongKong" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Honduras" ref2="_honduras" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Holy See (City Vatican State)" ref2="_holySeeCityVaticanState" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Heard and McDonald Is." ref2="_heardAndMcDonaldIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Haiti" ref2="_haiti" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guyana" ref2="_guyana" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guinea-Bissau" ref2="_guineaBissau" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guinea" ref2="_guinea" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guernsey" ref2="_guernsey" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guatemala" ref2="_guatemala" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guam" ref2="_guam" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Guadeloupe" ref2="_guadeloupe" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Grenada" ref2="_grenada" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Greenland" ref2="_greenland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Greece" ref2="_greece" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Gibraltar" ref2="_gibraltar" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Ghana" ref2="_ghana" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Germany" ref2="_germany" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Georgia" ref2="_georgia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Gambia" ref2="_gambia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Gabon" ref2="_gabon" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="French Southern Territories" ref2="_frenchSouthernTerritories" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="French Polynesia" ref2="_frenchPolynesia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="French Guiana" ref2="_frenchGuiana" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="France" ref2="_france" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Finland" ref2="_finland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Fiji" ref2="_fiji" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Faroe Islands" ref2="_faroeIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Falkland Islands (Malvina)" ref2="_falklandIslandsMalvina" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Ethiopia" ref2="_ethiopia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Estonia" ref2="_estonia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Eritrea" ref2="_eritrea" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="El Salvador" ref2="_elSalvador" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Egypt" ref2="_egypt" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Ecuador" ref2="_ecuador" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="East Timor" ref2="_eastTimor" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Dominican Republic" ref2="_dominicanRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Domenica" ref2="_dominica" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Djibouti" ref2="_djibouti" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Denmark" ref2="_denmark" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Czech Republic" ref2="_czechRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cyprus" ref2="_cyprus" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cuba" ref2="_cuba" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Croatia/Hrvatska" ref2="_croatiaHrvatska" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cote d.Ivoire" ref2="_coteDIvoire" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Costa Rica" ref2="_costaRica" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cook Islands" ref2="_cookIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Congo, Republic of" ref2="_congoRepublicOf" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Congo, Democratic People.s Republic" ref2="_congoDemocraticPeoplesRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Comoros" ref2="_comoros" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Colombia" ref2="_colombia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cocos (Keeling) Islands" ref2="_cocosKeelingIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Christmas Island" ref2="_christmasIsland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="China" ref2="_china" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Chile" ref2="_chile" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Chad" ref2="_chad" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Central African Republic" ref2="_centralAfricanRepublic" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cayman Islands" ref2="_caymanIslands" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cap Verde" ref2="_capVerde" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Canada" ref2="_canada" ref3="CA" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cameroon" ref2="_cameroon" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Cambodia" ref2="_cambodia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Burundi" ref2="_burundi" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Burkina Faso" ref2="_burkinaFaso" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bulgaria" ref2="_bulgaria" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Brunei Darussalam" ref2="_bruneiDarussalam" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="British Indian Ocean Territory" ref2="_britishIndianOceanTerritory" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Brazil" ref2="_brazil" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bouvet Island" ref2="_bouvetIsland" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Botswana" ref2="_botswana" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bosnia and Herzegobina" ref2="_bosniaAndHerzegovina" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bolivia" ref2="_bolivia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bhutan" ref2="_bhutan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bermuda" ref2="_bermuda" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Benin" ref2="_benin" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Belize" ref2="_belize" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Belgium" ref2="_belgium" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Belarus" ref2="_belarus" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Barbados" ref2="_barbados" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bangladesh" ref2="_bangladesh" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bahrain" ref2="_bahrain" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Bahamas" ref2="_bahamas" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Azerbaijan" ref2="_azerbaijan" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Austria" ref2="_austria" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Australia" ref2="_australia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Aruba" ref2="_aruba" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Armenia" ref2="_armenia" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Argentina" ref2="_argentina" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Antigua and Barbuda" ref2="_antiguaAndBarbuda" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Antarctica" ref2="_antarctica" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Anguilla" ref2="_anguilla" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Angola" ref2="_angola" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Andorra" ref2="_andorra" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="American Samoa" ref2="_americanSamoa" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Algeria" ref2="_algeria" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Albania" ref2="_albania" ref3="" ref4="" ref5="" ref6=""/>
+        <row atom="Default" atomid="-1" ref1="Afghanistan" ref2="_afghanistan" ref3="" ref4="" ref5="" ref6=""/>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

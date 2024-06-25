@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="d19fda67-37e1-4356-b0ba-8bc0d3e6b54a" version="2" name="NetSuite Customer UPSERT" type="connector-action" subType="netsuitesdk" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-18T17:10:24Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="true" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="Customer-upsert-listsRelationships" objectTypeName="Customer" operationType="UPSERT" requestProfile="da9657d8-f3ed-4cc4-9662-ee9d95b2ee82" requestProfileType="xml" responseProfileType="xml">
+          <field id="useConditionalDefaultsOnUpdate" type="string" value="true"/>
+          <field id="warningAsError" type="string" value="false"/>
+          <field id="ignoreReadOnlyFields" type="string" value="true"/>
+          <field id="disableMandatoryCustomFieldValidation" type="string" value="notSet"/>
+          <field id="disableSystemNotesForCustomFields" type="string" value="notSet"/>
+          <field id="runServerSuiteScriptAndTriggerWorkflows" type="string" value="notSet"/>
+          <field id="batchSize" type="integer" value="0"/>
+          <cookie role="INPUT">
+            <value>H4sIAAAAAAAAAO1bS1PjOBD+Ky7fB2I7hGSLzBQEKFLLqybsWSVbArRrSy5JBjK/fiU7TmQmoIkP
+EQddUonUVutrtfrhr3Ly463IgxfMBWF0GkYHgzDANGOI0Kdp+M/D5bdxGAgJKYI5o3gaLrEIf3w/
+ucVSVETiGyzhOZTw+8msEpIVd+m/OJPXRMh25JLgHOmBgNVzt7BQy5wixLEQYVBC+TwNG1HMD2Ez
+njL2n37G/G1+Xz1+mHVVhIefa23V/Kb2/ToK4EJPXuboJ34McpjifBpeXD6A9hGgxiuKwD1cFpjK
+MJDLEqsxzJX58IP6MQ2pslgYNGvrkTmVmFOYz9E0TCaToTm3yDgppZ7RY2pFIpcgHo0SkLUaea0x
+DN4EadY/YyzHkBqI1QbW8xqyKGGmBCtO/8oYxyAeRGMQHZQ5lI+MFwevOBWYv5AMiwO6OtKDjBXa
+kNsscE64MiY4xynpBTn5M8ioUYMaNQ7xrk4XzFhREFl/Vd6Od4duPeuJgVOrcAvytGBVD6eOjm0w
+o4GJk1Vpvk+kM5bnyrFUqAO3TKpItjPAsRVgZABcSK7i6B4BnoJ7dYxUQnV77lVQZ3R3iBMrxNgl
+xHUAnnGMiAR3FFyxHO2MU+3DGoweC7kJv1mjT/nOc63PYViaU6TG+BJoBQ3y+uiOmu9NsmuFmrEu
+PlbkKs218u+s1gjUefCjcGY13ch0Eawv3V6veVFCugQL8su0zrFpnZVMsJHZaqHjvhaKbRY6dmmh
+U0ormKsa5gXTyrTRyLRRIxV0pLZaadTXStZ6YOzSSov5TEVTtHu6j4+sMXTiMobeVkWqIhp7BNcs
+gzof7p4KY2uuj81cf832ivCeM1SpJFjvGAu5cfGkEwZWckFXbpuTJ31DQWytGeLIpZe35R/Q/nAG
+c6iw7V7gWr0BlCVLXRZ/Cyw33dtsncx7FQ/R2N7JtMXDVyocZhXn+qwXMMcC3HGke+H2ZnxLBubV
+eOCQClhXy594ftPwf2wne5Pb2IkDUe+JNXtymBrRC+aSCBWRwT1vIW+sFHcy5EY42AiLj6NI3DOI
+6BRrySiG0W6qXJL9p8uq1OJCrWU41ahbddW9SW9/So6HdocS63249KMrJsE1hj0aEyvCaOw2iECJ
+n1jbWOitDZPOIXfmt90CoHaMAK24rNR+VAXS91aMrYVWoypbb8lhnuWEcbWjnR1ieDSyw6wzTblW
+4aruulGpriqMhmJieoY5u7WRmPStsQbWO5O4PPu/8fJVZTawwJBnz0Yy6WSTlVRgSm1NIn2zSGzt
+26Oh04arBg4u6BOhZsrt1CWNUGAKbTXSoK+RrK27fm/yVXwpNsyUfOxM8SeGSvoayloDR05fAy2e
+SVnqMm5OheRV1rPPtb4PHbps5a/YK0AEgSWrwLM6at3EVQJsvKJTfynpQEkHSjrQ0gFMWSWD6pOK
+tfe7HWtIdnqLVNlUEHDBOePgBgsBn3ZveodHYytIkNaKsFZUtHrcucs1FPKGIfJIMDozKrhvQ9NN
+LooyZ0u83SJ/Uqcry9jfrudqL8VqL6nT0mzlDG8NADA/7+MK1rTRusJKDUH7coRDY107Nd++I2kS
+x0/2egYFyd5T5t3Zw7T+zLrLehrd0+ieRvc0uqfRPY2+Dr9f6G24p9E9je5pdE+jexrd0+ieRvc0
+uqfRPY3uaXRPo3sa3dPonkb3NLqn0T2N7ml0T6N7Gt3T6J5G9zS6sW5Do69GzD+9r8FuBvWjv/1f
+/n9pa4i5eT8AAA==</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Customer"/>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="36d25c63-259c-4457-bf7e-efd275301ed0" version="1" name="NetSuite Sales Order UPSERT" type="connector-action" subType="netsuitesdk" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="42b19a61-1d59-4428-80c9-90e3c232fa38" copiedFromComponentVersion="2" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="SalesOrder-upsert-transactionsSales" objectTypeName="Sales Order" operationType="UPSERT" requestProfile="5346f643-b5a3-48aa-a649-06bd6966cf54" requestProfileType="xml" responseProfileType="xml">
+          <field id="useConditionalDefaultsOnUpdate" type="string" value="true"/>
+          <field id="warningAsError" type="string" value="false"/>
+          <field id="ignoreReadOnlyFields" type="string" value="true"/>
+          <field id="disableMandatoryCustomFieldValidation" type="string" value="notSet"/>
+          <field id="disableSystemNotesForCustomFields" type="string" value="notSet"/>
+          <field id="runServerSuiteScriptAndTriggerWorkflows" type="string" value="notSet"/>
+          <field id="batchSize" type="integer" value="0"/>
+          <cookie role="INPUT">
+            <value>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</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Sales Order"/>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

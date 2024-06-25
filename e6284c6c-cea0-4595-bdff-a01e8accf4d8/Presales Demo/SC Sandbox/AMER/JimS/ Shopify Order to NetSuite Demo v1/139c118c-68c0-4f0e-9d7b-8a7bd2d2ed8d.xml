@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="139c118c-68c0-4f0e-9d7b-8a7bd2d2ed8d" version="1" name="Shopify Order to NetSuite Customer Upsert" type="transform.map" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="1e4cbd52-233e-4a42-bcec-db68d42c4a0a" copiedFromComponentVersion="1" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="e6edc0ba-bf65-4d36-9258-52b25663d52c" toProfile="da9657d8-f3ed-4cc4-9662-ee9d95b2ee82">
+      <Mappings>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='133']" fromNamePath="Root/Object/customer/Object/id" fromType="profile" toKey="359" toKeyPath="*[@key='1']/*[@key='359']" toNamePath="Customer/externalId" toType="profile"/>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='133']" fromNamePath="Root/Object/customer/Object/id" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromKey="165" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='165']" fromNamePath="Root/Object/customer/Object/default_address/Object/name" fromType="profile" toFunction="2" toKey="1" toType="function"/>
+        <Mapping fromKey="133" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='133']" fromNamePath="Root/Object/customer/Object/id" fromType="profile" toFunction="2" toKey="2" toType="function"/>
+        <Mapping fromKey="158" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='158']" fromNamePath="Root/Object/customer/Object/default_address/Object/address1" fromType="profile" toKey="1249" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1249']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/addr1" toType="profile"/>
+        <Mapping fromKey="159" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='159']" fromNamePath="Root/Object/customer/Object/default_address/Object/address2" fromType="profile" toKey="1251" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1251']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/addr2" toType="profile"/>
+        <Mapping fromKey="160" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='160']" fromNamePath="Root/Object/customer/Object/default_address/Object/city" fromType="profile" toKey="1255" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1255']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/city" toType="profile"/>
+        <Mapping fromKey="161" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='161']" fromNamePath="Root/Object/customer/Object/default_address/Object/province" fromType="profile" toKey="1257" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1257']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/state" toType="profile"/>
+        <Mapping fromKey="162" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='162']" fromNamePath="Root/Object/customer/Object/default_address/Object/country" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromType="function" toKey="1241" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1241']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/country" toType="profile"/>
+        <Mapping fromKey="163" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='163']" fromNamePath="Root/Object/customer/Object/default_address/Object/zip" fromType="profile" toKey="1259" toKeyPath="*[@key='1']/*[@key='607']/*[@key='853']/*[@key='961']/*[@key='1259']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/zip" toType="profile"/>
+        <Mapping fromKey="148" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='148']" fromNamePath="Root/Object/customer/Object/phone" fromType="profile" toKey="387" toKeyPath="*[@key='1']/*[@key='387']" toNamePath="Customer/phone" toType="profile"/>
+        <Mapping fromKey="134" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='134']" fromNamePath="Root/Object/customer/Object/email" fromType="profile" toKey="391" toKeyPath="*[@key='1']/*[@key='391']" toNamePath="Customer/email" toType="profile"/>
+        <Mapping fromKey="144" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='144']" fromNamePath="Root/Object/customer/Object/note" fromType="profile" toKey="415" toKeyPath="*[@key='1']/*[@key='415']" toNamePath="Customer/comments" toType="profile"/>
+        <Mapping fromKey="138" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='138']" fromNamePath="Root/Object/customer/Object/first_name" fromType="profile" toKey="375" toKeyPath="*[@key='1']/*[@key='375']" toNamePath="Customer/firstName" toType="profile"/>
+        <Mapping fromKey="139" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='139']" fromNamePath="Root/Object/customer/Object/last_name" fromType="profile" toKey="379" toKeyPath="*[@key='1']/*[@key='379']" toNamePath="Customer/lastName" toType="profile"/>
+        <Mapping fromKey="165" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='131']/*[@key='132']/*[@key='151']/*[@key='152']/*[@key='165']" fromNamePath="Root/Object/customer/Object/default_address/Object/name" fromType="profile" toKey="381" toKeyPath="*[@key='1']/*[@key='381']" toNamePath="Customer/companyName" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="1" name="Set Document Property" position="1" sumEnabled="false" type="DocumentPropertySet" x="10.0" y="10.0">
+          <Inputs>
+            <Input default="" key="1" name="Dynamic Document Property - shopifyCustomerId"/>
+          </Inputs>
+          <Outputs/>
+          <Configuration>
+            <DocumentProperty defaultValue="" persist="false" propertyId="dynamicdocument.shopifyCustomerId" propertyName="Dynamic Document Property - shopifyCustomerId"/>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep category="userdefined" id="33326e90-9a82-4fdc-9570-15c30c8f100f" key="2" name="Shopify Customer Name + Id" position="2" type="userdefined" x="30.0" y="83.0">
+          <Inputs>
+            <Input key="1" name="name"/>
+            <Input key="2" name="customerId"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="Customer Name + Id"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Lookup" key="3" name="Cross Reference Lookup" position="3" sumEnabled="false" type="CrossRefLookup" x="10.0" y="214.0">
+          <Inputs>
+            <Input default="" key="1" name="Country"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="NS_Country"/>
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="8146235c-8e94-4234-ac8b-ac9be60e2fbc" skipLookupIfNoInputs="true">
+              <Input index="1" name="Country" refId="1"/>
+              <Output index="2" name="NS_Country" refId="2"/>
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="427" value="Honeycomb Mfg."/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

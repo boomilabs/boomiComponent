@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/JimS/ Shopify Order to NetSuite Demo v1" componentId="e8e9dfc8-7568-463e-9e14-dc567e22eb62" version="1" name="Shopify Order QUERY" type="connector-action" subType="shopify" createdDate="2021-03-10T23:04:32Z" createdBy="james.stanway@boomi.com" modifiedDate="2021-03-10T23:04:32Z" modifiedBy="james.stanway@boomi.com" deleted="false" currentVersion="true" folderName=" Shopify Order to NetSuite Demo v1" folderId="RjozODgxMTc0" copiedFromComponentId="4b82f503-9e56-4ed3-9d5a-78fb8f72b23d" copiedFromComponentVersion="2" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="QUERY" objectTypeId="ORDER" objectTypeName="Order" operationType="QUERY" requestProfileType="xml" responseProfile="47406760-caff-48be-856d-1babdc60f956" responseProfileType="json">
+          <field id="queryPageSize" type="integer" value="250"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Order">
+                  <FieldList>
+                    <ConnectorField filterable="false" name="billing_address" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="client_details" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="created_at_max" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="true" name="created_at_min" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="customer" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="customer_id" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="discount_codes" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="fulfillments" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="ids" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="line_items" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="note_attributes" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="payment_details" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="payment_gateway_names" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="processed_at_max" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="true" name="processed_at_min" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="refunds" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="shipping_address" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="false" name="shipping_lines" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="since_id" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="true" name="status" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="tax_lines" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="updated_at_max" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="true" name="updated_at_min" selectable="false" selected="false" sortable="true"/>
+                    <ConnectorField filterable="false" name="billing_address/address1" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/address2" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/city" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/country" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/country_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/default" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/first_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/last_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/latitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/longitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/phone" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/province" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/province_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="billing_address/zip" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="browser_ip" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="buyer_accepts_marketing" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="cancel_reason" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="cancelled_at" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="cart_token" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="checkout_id" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="checkout_token" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/accept_language" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/browser_height" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/browser_ip" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/browser_width" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/session_hash" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="client_details/user_agent" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="closed_at" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="confirmed" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="contact_email" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="created_at" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="currency" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/accepts_marketing" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/address1" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/address2" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/city" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/country" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/country_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/default" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/first_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/last_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/latitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/longitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/phone" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/province" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/province_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/addresses/zip" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/created_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/address1" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/address2" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/city" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/country" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/country_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/default" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/first_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/last_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/latitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/longitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/phone" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/province" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/province_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/default_address/zip" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/email" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/first_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/last_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/last_order_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/last_order_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/multipass_identifier" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/note" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/orders_count" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/state" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/tags" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/tax_exempt" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/total_spent" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/updated_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="customer/verified_email" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="device_id" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="discount_codes/amount" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="discount_codes/code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="discount_codes/type" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="email" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="true" name="financial_status" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="true" name="fulfillment_status" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/created_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/fulfillable_quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/fulfillment_service" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/fulfillment_status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/gift_card" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/grams" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/product_exists" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/product_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/requires_shipping" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/sku" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/tax_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/tax_lines/rate" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/tax_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/taxable" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/total_discount" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/variant_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/variant_inventory_management" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/variant_title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/line_items/vendor" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/order_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/receipt/authorization" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/receipt/testcase" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/service" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/shipment_status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/tracking_company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/tracking_number" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/tracking_numbers" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/tracking_url" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/tracking_urls" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="fulfillments/updated_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="gateway" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="id" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="inventory_behaviour" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="landing_site" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="landing_site_ref" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/fulfillable_quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/fulfillment_service" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/fulfillment_status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/gift_card" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/grams" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/product_exists" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/product_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/requires_shipping" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/sku" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/tax_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/tax_lines/rate" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/tax_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/taxable" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/total_discount" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/variant_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/variant_inventory_management" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/variant_title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="line_items/vendor" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="location_id" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="name" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="note" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="note_attributes/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="note_attributes/value" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="number" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="order_number" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="order_status_url" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="payment_details/avs_result_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="payment_details/credit_card_bin" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="payment_details/credit_card_company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="payment_details/credit_card_number" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="payment_details/cvv_result_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="processed_at" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="processing_method" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="reference" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="referring_site" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/created_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/note" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/processed_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/fulfillable_quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/fulfillment_service" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/fulfillment_status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/gift_card" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/grams" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/product_exists" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/product_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/requires_shipping" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/sku" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/tax_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/tax_lines/rate" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/tax_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/taxable" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/total_discount" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/variant_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/variant_inventory_management" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/variant_title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item/vendor" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/line_item_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/refund_line_items/quantity" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/restock" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/amount" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/authorization" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/created_at" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/currency" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/device_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/error_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/gateway" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/kind" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/order_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/payment_details/avs_result_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/payment_details/credit_card_bin" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/payment_details/credit_card_company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/payment_details/credit_card_number" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/payment_details/cvv_result_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/receipt/authorization" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/receipt/testcase" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/source_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/status" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/test" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/transactions/user_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="refunds/user_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="send_fulfillment_receipt" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="send_receipt" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/address1" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/address2" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/city" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/company" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/country" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/country_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/default" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/first_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/last_name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/latitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/longitude" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/name" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/phone" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/province" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/province_code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_address/zip" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/carrier_identifier" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/code" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/requested_fulfillment_service_id" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/source" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/tax_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/tax_lines/rate" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/tax_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="shipping_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="source_identifier" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="source_name" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="source_url" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="subtotal_price" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="tags" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="tax_lines/price" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="tax_lines/rate" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="tax_lines/title" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="false" name="taxes_included" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="test" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="token" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_discounts" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_line_items_price" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_price" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_price_usd" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_tax" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="total_weight" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="updated_at" selectable="true" selected="true" sortable="false"/>
+                    <ConnectorField filterable="false" name="user_id" selectable="true" selected="true" sortable="false"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter>
+                      <ConnectorFilterLogical logicalOperator="and">
+                        <ConnectorFilterExpression expressionField="created_at_min" expressionOperator="EQUAL_TO" key="1" name="created_at_min="/>
+                      </ConnectorFilterLogical>
+                    </ConnectorBaseFilter>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs>
+                <Input key="1" name="created_at_min="/>
+              </Inputs>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

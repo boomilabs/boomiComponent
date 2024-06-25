@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#COMMON/#SHARED CONNECTIONS" componentId="92c39112-e932-4825-9c9e-6369c3846c1e" version="17" name="(Shared) TSTDRV1673343 - se@boomi.com 2018_1" type="connector-settings" subType="netsuitesdk" createdDate="2017-06-06T17:24:08Z" createdBy="paul.pasko@boomi.com" modifiedDate="2024-05-13T17:31:19Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="#SHARED CONNECTIONS" folderId="RjoxMTgyNzI3" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="url" type="string" value="https://webservices.netsuite.com/services/NetSuitePort_2018_1"/>
+      <field id="user" type="string" value="se@boomi.com"/>
+      <field id="password" type="password" value="063c5488695b2b6794a61f4352be1a77354edc80d486328a190f24928d59b689ad823d62479ee7fe1c5a260f0edc9152fde7ef1f128e6e02316a7d82e34be1ad"/>
+      <field id="accountNumber" type="string" value="TSTDRV1673343"/>
+      <field id="consumerKey" type="string" value=""/>
+      <field id="consumerSecret" type="string" value=""/>
+      <field id="tokenId" type="string" value=""/>
+      <field id="tokenSecret" type="string" value=""/>
+      <field id="applicationId" type="string" value="B5BAABDC-094E-4143-9169-10D3F1C9E2E0"/>
+      <field id="version" type="string" value="v2018_1_0"/>
+      <field id="numRetries" type="integer" value="5"/>
+      <field id="maxConnections" type="integer" value="10"/>
+      <field id="consumerSecretEncrypted" type="password"/>
+      <field id="tokenSecretEncrypted" type="password"/>
+      <field id="useBoomiIntegrationRecord" type="boolean" value="false"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>
