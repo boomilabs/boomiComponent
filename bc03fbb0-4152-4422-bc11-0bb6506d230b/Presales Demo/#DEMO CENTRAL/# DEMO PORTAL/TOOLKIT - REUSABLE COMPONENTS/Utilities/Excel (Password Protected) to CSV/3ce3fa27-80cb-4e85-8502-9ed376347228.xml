@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#DEMO CENTRAL/# DEMO PORTAL/TOOLKIT - REUSABLE COMPONENTS/Utilities/Excel (Password Protected) to CSV" componentId="3ce3fa27-80cb-4e85-8502-9ed376347228" version="2" name="GET: PP Excel File" type="connector-action" subType="ftp" createdDate="2024-06-06T06:42:35Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-17T12:17:38Z" modifiedBy="nagendra.kalluri@boomi.com" deleted="false" currentVersion="true" folderName="Excel (Password Protected) to CSV" folderId="Rjo2NzgxMzkx" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <FTPGetAction fileToMove="*" ftpaction="actionget" maxFileCount="0" remoteDirectory="/presales/GTO_Shared_Services/DEMO/Toolkit/pp excel file" transferType="binary"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#COMMON/#SHARED CONNECTIONS" componentId="4f799905-a3c7-4446-88d5-8c03a56b26b1" version="3" name="(Shared) Presales FTP Connection" type="connector-settings" subType="ftp" createdDate="2023-06-09T10:29:22Z" createdBy="basil.mathew@boomi.com" modifiedDate="2023-06-09T10:32:09Z" modifiedBy="basil.mathew@boomi.com" deleted="false" currentVersion="true" folderName="#SHARED CONNECTIONS" folderId="RjoxMTgyNzI3" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//FTPSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <FTPSettings xmlns="" connectionMode="passive" host="ftp.boomidemo.com" port="21">
+      <AuthSettings password="4a8ce51334636e9ed9bfc93f62ae4abc937d2c7301887e710fa5fd8f39da26340dc70664ea546642fbf7e73a7a520fa7860d797ecd11c824b31a92400b3b4ab8" user="presales_ftp"/>
+      <SSLOptions clientauth="false" sslmode="none"/>
+    </FTPSettings>
+  </bns:object>
+</bns:Component>

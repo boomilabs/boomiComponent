@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#DEMO CENTRAL/# DEMO PORTAL/TOOLKIT - REUSABLE COMPONENTS/Utilities/Excel (Password Protected) to CSV" componentId="dc8e701a-15f1-4233-b3d3-165a732ef8a8" version="2" name="Groovy: Parse PP Excel File" type="script.processing" createdDate="2024-06-06T06:44:05Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-17T10:03:48Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Excel (Password Protected) to CSV" folderId="Rjo2NzgxMzkx" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <ProcessingScript xmlns="" language="groovy" useCache="true">
+      <script>import java.util.Locale;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import java.text.SimpleDateFormat;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import com.boomi.execution.ExecutionUtil;
+import java.util.logging.Logger;
+
+// Retrieve a handle to the Logger
+String scriptName = "Parse PP Excel";
+Logger logger = ExecutionUtil.getBaseLogger();
+// This function return the error Line no if found in stacktrace string otherwise -1
+String getErrorLineNo( String str )
+{
+    def result = (str =~ /(groovy|class).(\d+)./);
+    return result ? result[0][2] : -1
+}
+
+static final COMMA_SEPERATED = ",";
+try{
+for (int i = 0; i &lt; dataContext.getDataCount(); i++) {
+   def password = ExecutionUtil.getDynamicProcessProperty("DPP_Password");
+    InputStream is = dataContext.getStream(i);
+    Properties props = dataContext.getProperties(i);
+    SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+    DataFormatter formatter = new DataFormatter();
+
+    Workbook wb = WorkbookFactory.create(is, password);
+    List sheetList = wb.sheets;
+    StringBuilder sb = new StringBuilder();
+
+    String delimiter = props.getProperty("document.dynamic.userdefined.dpp_delimiter", COMMA_SEPERATED);
+
+    for (int j = 0; j &lt; sheetList.size(); j++) {
+        Sheet sheet = wb.getSheetAt(j);
+        int maxNumCols = 0;
+        
+        for (Row row : sheet) {
+            maxNumCols = Math.max(maxNumCols, row.getLastCellNum());
+        }
+
+        for (Row row : sheet) {
+            for (int cn = 0; cn &lt; maxNumCols; cn++) {
+                Cell cell = row.getCell(cn);
+                if (cell == null) {
+                    sb.append("");
+                } else {
+                    switch (cell.getCellType()) {
+                        case CellType.NUMERIC:
+                            if (DateUtil.isCellDateFormatted(cell)) {
+                                sb.append("\"" + formatter.formatCellValue(cell) + "\"");
+                            } else {
+                                sb.append("\"" + cell.getNumericCellValue() + "\"");
+                            }
+                            break;
+                        case CellType.STRING:
+                            sb.append("\"" + cell.getStringCellValue() + "\"");
+                            break;
+                        case CellType.FORMULA:
+                            sb.append("\"" + cell.getCellFormula() + "\"");
+                            break;
+                        case CellType.BOOLEAN:
+                            sb.append("\"" + cell.getBooleanCellValue() + "\"");
+                            break;
+                        case CellType.BLANK:
+                            sb.append("");
+                            break;
+                        default:
+                            sb.append("");
+                            break;
+                    }
+                }
+                sb.append(delimiter);
+            }
+            if (sb.length() &gt; 0) {
+                sb.setLength(sb.length() - 1);
+            }
+            sb.append("\r\n");
+        }
+
+        String output = sb.toString();
+        sb.setLength(0);
+        is = new ByteArrayInputStream(output.getBytes());
+        props.setProperty("document.dynamic.userdefined.SHEET", sheet.getSheetName());
+        dataContext.storeStream(is, props);
+    
+    }
+}
+}
+catch ( Exception err )
+{
+    String stackTrace = err.getStackTrace().toString();
+    //Below message will be shown in process reporting page
+    String message = "SCRIPT ERROR (${scriptName}) at line no#${getErrorLineNo(stackTrace)}: ${err.getMessage()}".toString();
+    // Below log message will be shown in process logs
+    logger.warning("SCRIPT_ERROR_MESSAGE:"+message);
+    logger.warning("SCRIPT_ERROR_STACK_TRACE:"+stackTrace);
+    // Set the DPP error message to have a value of formatted error message directly, without persisting
+    ExecutionUtil.setDynamicProcessProperty("error_message", message, false);
+    throw new Exception( message );//Again throw exception to parent process to stop execution.
+}</script>
+    </ProcessingScript>
+  </bns:object>
+</bns:Component>

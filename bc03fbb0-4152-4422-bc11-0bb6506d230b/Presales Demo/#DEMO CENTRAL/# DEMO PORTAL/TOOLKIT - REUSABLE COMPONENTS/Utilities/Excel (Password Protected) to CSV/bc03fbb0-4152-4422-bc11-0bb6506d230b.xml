@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#DEMO CENTRAL/# DEMO PORTAL/TOOLKIT - REUSABLE COMPONENTS/Utilities/Excel (Password Protected) to CSV" componentId="bc03fbb0-4152-4422-bc11-0bb6506d230b" version="9" name="Main: Read/Parse PP Excel File" type="process" createdDate="2024-06-03T05:48:40Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-17T10:05:49Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Excel (Password Protected) to CSV" folderId="Rjo2NzgxMzkx" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description>Run the process on "PAS-Applicaton Demos" or  "PAS-REMOTE-POC" Atoms</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="46.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape6" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape5" shapetype="documentproperties" userlabel="Read Sheet Name" x="1008.0" y="48.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Document Property - DPP_SheetName" persist="false" propertyId="dynamicdocument.DPP_SheetName" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="track">
+                    <trackparameter defaultValue="" propertyId="dynamicdocument.SHEET" propertyName="Dynamic Document Property - SHEET"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Document Property - CurrentData" persist="false" propertyId="dynamicdocument.CurrentData" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="2" valueType="current"/>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape7" x="1184.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="4f799905-a3c7-4446-88d5-8c03a56b26b1" connectorType="ftp" hideSettings="false" operationId="3ce3fa27-80cb-4e85-8502-9ed376347228" parameter-profile="EMBEDDED|ftpparameterchooser|3ce3fa27-80cb-4e85-8502-9ed376347228">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="608.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape3" shapetype="documentproperties" userlabel="Set File Password" x="624.0" y="48.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Process Property - DPP_Password" persist="false" propertyId="process.DPP_Password" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="static">
+                    <staticparameter staticproperty="Partena2"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="800.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape4" shapetype="dataprocess" userlabel="Parse PP Excel File" x="816.0" y="48.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="Custom Scripting" processtype="12">
+                <dataprocessscript componentId="dc8e701a-15f1-4233-b3d3-165a732ef8a8" language="groovy2" useCache="true" useComponent="true">
+                  <script>import java.util.Locale;
+import org.apache.poi.ss.usermodel.CellType
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+for (int i = 0;i&lt;dataContext.getDataCount ( ); i ++ ) {
+    InputStream is = dataContext.getStream(i);
+    Properties props = dataContext.getProperties(i);
+
+    DataFormatter formatter = new DataFormatter(Locale.default);
+    Workbook wb = WorkbookFactory.create(is);
+    List sheetList = wb.sheets
+    StringBuilder sb = new StringBuilder();
+
+    for (int j = 0; j &lt; sheetList.size(); j++) {
+        Sheet sheet = wb.getSheetAt(j);
+        for (Row row : sheet) {
+            for (Cell cell : row) {
+                switch (cell.getCellType()) {
+                    case CellType.NUMERIC:
+                        if (DateUtil.isCellDateFormatted(cell)) {
+                            sb.append("\"" + formatter.formatCellValue(cell) + "\"");
+                        } else {
+                            sb.append("\"" + cell.getNumericCellValue() + "\"");
+                        }
+                        break;
+                    case CellType.STRING:
+                        sb.append("\"" + cell.getStringCellValue() + "\"");
+                        break;
+                    case CellType.FORMULA:
+                        sb.append("\"" + cell.getCellFormula() + "\"");
+                        break;
+                    case CellType.BOOLEAN:
+                        sb.append("\"" + cell.getBooleanCellValue() + "\"");
+                        break;
+                    case CellType.BLANK:
+                        sb.append("");
+                        break;
+                    default:
+                        sb.append("");
+                        break;
+                }
+                sb.append(",");
+            }
+            if (sb.length() &gt; 0) {
+                sb.setLength(sb.length() - 1);
+            }
+            sb.append("\r\n");
+        }
+
+        String output = sb.toString();
+        sb.setLength(0);
+        is = new ByteArrayInputStream(output.getBytes());
+        props.setProperty("document.dynamic.userdefined.SHEET", sheet.getSheetName());
+        dataContext.storeStream(is, props);
+    }
+}</script>
+                </dataprocessscript>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape5" x="992.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="catcherrors_icon" name="shape6" shapetype="catcherrors" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <catcherrors catchAll="true" retryCount="0"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="default" name="shape6.dragpoint1" text="Try" toShape="shape2" x="416.0" y="56.0"/>
+            <dragpoint identifier="error" name="shape6.dragpoint2" text="Catch" toShape="shape8" x="416.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" x="1200.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="message_icon" name="shape8" shapetype="message" userlabel="" x="432.0" y="208.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Error: {1}</msgTxt>
+              <msgParameters>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="meta.base.catcherrorsmessage" propertyName="Base - Try/Catch Message"/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape8.dragpoint1" toShape="shape9" x="608.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape9" shapetype="stop" x="624.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
