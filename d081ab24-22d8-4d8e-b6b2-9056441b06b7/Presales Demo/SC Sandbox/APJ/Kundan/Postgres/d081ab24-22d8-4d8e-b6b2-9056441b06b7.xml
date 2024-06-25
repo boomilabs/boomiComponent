@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/APJ/Kundan/Postgres" componentId="d081ab24-22d8-4d8e-b6b2-9056441b06b7" version="2" name="Main: Test Process" type="process" createdDate="2024-06-24T10:32:33Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-24T10:43:43Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Postgres" folderId="Rjo2ODM1MjU4" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="46.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="224.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="catcherrors_icon" name="shape4" shapetype="catcherrors" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <catcherrors catchAll="true" retryCount="3"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="default" name="shape4.dragpoint1" text="Try" toShape="shape2" x="416.0" y="56.0"/>
+            <dragpoint identifier="error" name="shape4.dragpoint2" text="Catch" toShape="shape6" x="416.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="80eb9550-e52e-417d-a86b-783d0deaf5fb" connectorType="database" hideSettings="false" operationId="7a2f4864-4209-4f5b-9cd1-08ad4ba5bdde" parameter-profile="EMBEDDED|databaseparameterchooser|c1ddf7d7-4a03-46ec-afaa-afc0a36399b5|7a2f4864-4209-4f5b-9cd1-08ad4ba5bdde">
+              <parameters/>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape5" x="608.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape5" shapetype="stop" x="624.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="message_icon" name="shape6" shapetype="message" userlabel="" x="432.0" y="208.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Error: {1}</msgTxt>
+              <msgParameters>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="meta.base.catcherrorsmessage" propertyName="Base - Try/Catch Message"/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape7" x="608.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" x="624.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

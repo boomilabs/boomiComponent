@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/APJ/Kundan/Postgres" componentId="c1ddf7d7-4a03-46ec-afaa-afc0a36399b5" version="4" name="Pgsql User" type="profile.db" createdDate="2024-06-24T10:32:33Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-25T06:25:14Z" modifiedBy="kishore.chavakula@boomi.com" deleted="false" currentVersion="true" folderName="Postgres" folderId="Rjo2ODM1MjU4" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DatabaseProfile xmlns="" strict="true" version="2">
+      <ProfileProperties>
+        <DatabaseGeneralInfo executionType="dbread"/>
+      </ProfileProperties>
+      <DataElements>
+        <DBStatement isNode="true" key="2" name="Statement" statementType="select" storedProcedure="" tableName="">
+          <DBFields isNode="true" key="3" name="Fields" type="result_set">
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="6" mandatory="false" name="created_at">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="11" mandatory="false" name="email">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="12" mandatory="false" name="first_name">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="8" mandatory="false" name="id">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="13" mandatory="false" name="last_name">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="14" mandatory="false" name="password">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="10" mandatory="false" name="updated_at">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+          </DBFields>
+          <DBParameters isNode="true" key="4" name="Parameters"/>
+          <sql>SELECT * FROM User</sql>
+        </DBStatement>
+      </DataElements>
+    </DatabaseProfile>
+  </bns:object>
+</bns:Component>

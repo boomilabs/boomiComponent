@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#COMMON/#SHARED CONNECTIONS" componentId="80eb9550-e52e-417d-a86b-783d0deaf5fb" version="15" name="(shared) Postgres:AWS" type="connector-settings" subType="database" createdDate="2021-04-19T09:30:06Z" createdBy="sidhartha_chandra@dell.com" modifiedDate="2024-06-24T10:15:04Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="#SHARED CONNECTIONS" folderId="RjoxMTgyNzI3" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="org.postgresql.Driver" dbname="" driverId="custom" host="" isPoolEnabled="false" password="5f950825219868c81265d3e5db2d3136970cb8f0fcaccc68f4dbee62bdbe3d137d4264f80cf2ae5d8deea0f889b03f60c08940e05d9058d7ab98188c57198289" port="0" urlFormat="jdbc:postgresql://postgresql-demo.c9qgul0tizhq.us-east-1.rds.amazonaws.com:5432/postgresdemo?tcpKeepAlive=true" username="demouser">
+      <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>

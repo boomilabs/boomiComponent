@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/APJ/Kundan/Postgres" componentId="7a2f4864-4209-4f5b-9cd1-08ad4ba5bdde" version="1" name="Get User" type="connector-action" subType="database" createdDate="2024-06-24T10:32:33Z" createdBy="kundan.gupta@boomi.com" modifiedDate="2024-06-24T10:32:33Z" modifiedBy="kundan.gupta@boomi.com" deleted="false" currentVersion="true" folderName="Postgres" folderId="Rjo2ODM1MjU4" copiedFromComponentId="b572fabd-aa3b-4758-ab89-21596ec25542" copiedFromComponentVersion="4" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseGetAction batchCount="0" maxRows="0">
+          <ReadProfile profileId="c1ddf7d7-4a03-46ec-afaa-afc0a36399b5"/>
+        </DatabaseGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
