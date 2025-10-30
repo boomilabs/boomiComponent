@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/APJ/Skanda J/Test" componentId="c7814da3-de44-4489-b886-0cc1585a6aec" version="18" name="Jenkins Package Deployment" type="process" createdDate="2025-07-21T04:49:29Z" createdBy="skanda.j@boomi.com" modifiedDate="2025-10-30T05:22:04Z" modifiedBy="skanda.j@boomi.com" deleted="false" currentVersion="true" folderName="Test" folderId="Rjo3ODM0NDM1" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="224.0" y="478.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape24" x="480.0" y="488.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape15" shapetype="message" userlabel="" x="48.0" y="208.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Success</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape15.dragpoint1" toShape="shape16" x="224.0" y="216.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="returndocuments_icon" name="shape16" shapetype="returndocuments" x="240.0" y="208.0">
+          <configuration>
+            <returndocuments/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="message_icon" name="shape17" shapetype="message" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>{1}</msgTxt>
+              <msgParameters>
+                <parametervalue key="0" valueType="process">
+                  <processparameter processproperty="DPP_TO" processpropertydefaultvalue=""/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape17.dragpoint1" toShape="shape18" x="416.0" y="56.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape18" shapetype="stop" x="432.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="stop_icon" name="shape20" shapetype="stop" x="752.0" y="320.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape21" shapetype="connectoraction" userlabel="" x="512.0" y="320.0">
+          <configuration>
+            <connectoraction actionType="GET" allowDynamicCredentials="NONE" connectionId="40cd96f2-60af-4d98-ba4a-2854ab40bdb9" connectorType="netsuitesdk" hideSettings="false" operationId="bf5b8bf2-1bfa-4044-b44d-6fa7cc62db12" parameter-profile="EMBEDDED|genericparameterchooser|bf5b8bf2-1bfa-4044-b44d-6fa7cc62db12">
+              <parameters>
+                <parametervalue elementToSetId="0" elementToSetName="ID" name="ID" valueType="static">
+                  <staticparameter staticproperty="Test Cost Code for AJS Construction Company.-5740957-S"/>
+                </parametervalue>
+              </parameters>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape21.dragpoint1" toShape="shape20" x="736.0" y="328.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape24" shapetype="message" userlabel="" x="496.0" y="480.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Hello world</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape24.dragpoint1" toShape="shape25" x="624.0" y="488.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="returndocuments_icon" name="shape25" shapetype="returndocuments" x="640.0" y="480.0">
+          <configuration>
+            <returndocuments/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="">
+      <Connections/>
+      <Operations/>
+      <PartnerOverrides/>
+      <Properties>
+        <PropertyOverride name="DPP_TO"/>
+      </Properties>
+      <Extensions>
+        <ObjectDefinitions>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides/>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>

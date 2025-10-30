@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/BarryG/NetSuite and Procore Accelerator v1.3/Common Assets/Connections" componentId="40cd96f2-60af-4d98-ba4a-2854ab40bdb9" version="2" name="NetSuite PRCR Integration" type="connector-settings" subType="netsuitesdk" createdDate="2021-07-29T14:54:03Z" createdBy="Barry.Gerdsen@boomi.com" modifiedDate="2021-07-29T15:04:37Z" modifiedBy="tommy.conway@boomi.com" deleted="false" currentVersion="true" folderName="Connections" folderId="Rjo0MTg1NDc3" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="url" type="string" value="https://webservices.netsuite.com/services/NetSuitePort_2019_2"/>
+      <field id="user" type="string" value=""/>
+      <field id="password" type="password" value=""/>
+      <field id="accountNumber" type="string" value="TSTDRV1020692"/>
+      <field id="consumerKey" type="string" value="c7d2b17e1e10ea54f5d65c3e18ee515e7faac930258a5b39493935ebd494f108"/>
+      <field id="consumerSecret" type="string" value=""/>
+      <field id="tokenId" type="string" value="fc8ecf0e1565cc616b53b77814e30850ba4986a84595331c2ff2f91546cbe56b"/>
+      <field id="tokenSecret" type="string" value=""/>
+      <field id="applicationId" type="string" value="2D04FA4A-2ABB-4CA9-AC3F-BA4C499AEE7B"/>
+      <field id="version" type="string" value="v2019_2_0"/>
+      <field id="numRetries" type="integer" value="5"/>
+      <field id="maxConnections" type="integer" value="1"/>
+      <field id="consumerSecretEncrypted" type="password" value="29ed4b7701f1dd5be9bc02d412e1c2465de16091e4ae1e1045024a3ce10ed6cb9ed6f520cccdbd83232d89fe041e741dccc16f44ce5e9abc220467fd28752cc2"/>
+      <field id="tokenSecretEncrypted" type="password" value="60098756cae3f0e3053d96f6cb18a3a4e6e5ace39b72a55e2f968b890bd9b4a89c6cb7a983d632773d128da9c3374a597f9ce1ce25d20f873df08ec4911eb0d8"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

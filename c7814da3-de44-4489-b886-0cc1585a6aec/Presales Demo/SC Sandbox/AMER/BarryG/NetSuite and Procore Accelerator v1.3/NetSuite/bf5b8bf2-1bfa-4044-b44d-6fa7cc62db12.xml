@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/SC Sandbox/AMER/BarryG/NetSuite and Procore Accelerator v1.3/NetSuite" componentId="bf5b8bf2-1bfa-4044-b44d-6fa7cc62db12" version="1" name="Get Item by ID" type="connector-action" subType="netsuitesdk" createdDate="2021-07-29T14:53:59Z" createdBy="Barry.Gerdsen@boomi.com" modifiedDate="2021-07-29T14:53:59Z" modifiedBy="Barry.Gerdsen@boomi.com" deleted="false" currentVersion="true" folderName="NetSuite" folderId="Rjo0MTg1NDc0" copiedFromComponentId="ca6b3599-2432-449d-bf60-4846b2f53541" copiedFromComponentVersion="1" branchName="main" branchId="QjoxMTgwMzQ">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="OtherChargeResaleItem-get-listsAccounting" objectTypeName="Other Charge Resale Item" operationType="GET" requestProfileType="xml" responseProfile="36281484-ca16-4bb2-a4e6-d0451b618bff" responseProfileType="xml">
+          <cookie role="OUTPUT">
+            <value>XQAAgAD//////////wAeD8uHEdjOZpEPgx7K/Xsz1H/pt9ooMXYlZiBNKgltavcpcDhBE5UIitBb
+HZNL4lKGhQv3Kr/GloQYt8mOGO13MHPJlz9sblWRdRCKQHByNofieh3e5+oi6nqUsvEGyps84V/n
+6KmYO+uVPCC2doQW5RfAD7jTbmswhgsygVRBmttNqJEUdfFKXKx26CSDe/CQ5GgKjLvp3/gFeS4e
+qZkwj0knIzOUu1JoApvRhEdLKzif6B1v51054w3/8DbxoLXjM50+5g9SWIwmPM+ApwEL00ELB82S
+qgexrriq2UVUpu+Reslx7804XJkc0YKAFs4drhVWqkjdpVHFGENrgpEbvrgXuIAurr4kIrs+apRX
+ap4xgSi/Siif+zP6oJj+wgN9aafBcR19TdjDBNwI3Rqb5CamJ4incEYfqJv5Y3xibFx/W6jj1jnf
+gU7RJfB/25fDWrOwfadOkcQE+cfUgq1iLEuGDyZWvXvBSRXdSp3Dx7qrYL0BXgKW2Smwh7UkexUE
+gY+kpcAJPfcbMIXgJFdBZaQzRmyGV3RBj/B1Nil0FYg+EpoiPj6Pxm8Q0jh1mSQNg9a9VhUNHGy6
+0qhiEMuMKjYoQss9PP+zWDVEitLYnCfk+1TZLWhgpy1rumyPppfS3Fq19qa1T+FDu0FU6EN61uCc
+i9YfHJ2no6f9IzXg2vGUAx6RIXuEM2NwAxi5kj9l6M8YhoYZPqdC65z2Zhqpoc7o7ewxDOCy7WEb
+Y4VoPbTzsgN0oFFB6NDjsNK6pKzgDwzUyEPrHMYwFkf8MeZ+UktrPYYKCwG5Ge5V+/SDENwgt9T6
+a1fgvzFIkoKhPF+vUKhqRZCknVAx8qM8mYh0pRTkml4XJIalfVZD6dua33Jlt17sm84/H0DB5hwS
+Zi4cC1uxUmceoVRoVrJrwEbcPiff8Pw073nSVjpuXbQ87Df95PviSbnkO4tinfw5KiEhoRaDtnzh
+zsQ1xq23g0cQ0ZBjWvbckIuxSOdFO4ebptP8J2hFFu7NG6ugngJSHyc+ea3aZYxENf5cHEg=</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Other Charge Resale Item">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="nullFieldList/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="createdDate" selectable="true" selected="true" sortable="true" type="dateTime" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="lastModifiedDate" selectable="true" selected="true" sortable="true" type="dateTime" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseDescription" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="manufacturingChargeItem" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="cost" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="costUnits" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="expenseAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="expenseAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="expenseAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="expenseAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="intercoExpenseAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoExpenseAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoExpenseAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoExpenseAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="salesDescription" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="includeChildren" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="incomeAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="incomeAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="incomeAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="incomeAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="intercoIncomeAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoIncomeAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoIncomeAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoIncomeAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="isTaxable" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="matrixType" selectable="true" selected="true" sortable="true" type="ItemMatrixType" typeNamespace="urn:types.accounting_2019_2.lists.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="taxSchedule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="taxSchedule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="taxSchedule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="taxSchedule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="costEstimateType" selectable="true" selected="true" sortable="true" type="ItemCostEstimateType" typeNamespace="urn:types.common_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="costEstimate" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="unitsType/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="unitsType/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="unitsType/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="unitsType/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="purchaseUnit/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseUnit/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseUnit/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseUnit/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="saleUnit/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="saleUnit/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="saleUnit/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="saleUnit/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="costEstimateUnits" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="issueProduct/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="issueProduct/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="issueProduct/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="issueProduct/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="billingSchedule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="billingSchedule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="billingSchedule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="billingSchedule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="deferredRevenueAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferredRevenueAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferredRevenueAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferredRevenueAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="intercoDefRevAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoDefRevAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoDefRevAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="intercoDefRevAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="revRecSchedule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecSchedule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecSchedule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecSchedule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="deferralAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferralAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferralAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferralAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="amortizationTemplate/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="amortizationTemplate/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="amortizationTemplate/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="amortizationTemplate/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="residual" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="deferRevRec" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueRecognitionRule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueRecognitionRule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueRecognitionRule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueRecognitionRule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="revRecForecastRule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecForecastRule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecForecastRule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revRecForecastRule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="revenueAllocationGroup/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueAllocationGroup/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueAllocationGroup/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revenueAllocationGroup/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="createRevenuePlansOn/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="createRevenuePlansOn/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="createRevenuePlansOn/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="createRevenuePlansOn/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="directRevenuePosting" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="contingentRevenueHandling" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revReclassFXAccount/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revReclassFXAccount/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revReclassFXAccount/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="revReclassFXAccount/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="amortizationPeriod" selectable="true" selected="true" sortable="true" type="long" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="minimumQuantity" selectable="true" selected="true" sortable="true" type="long" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="minimumQuantityUnits" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="enforceMinQtyInternally" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="maximumQuantity" selectable="true" selected="true" sortable="true" type="long" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="softDescriptor" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="isFulfillable" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="generateAccruals" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="costCategory/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="costCategory/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="costCategory/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="costCategory/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="purchaseOrderQuantity" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseOrderAmount" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseOrderQuantityDiff" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="receiptQuantity" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="receiptAmount" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="receiptQuantityDiff" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="pricesIncludeTax" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="quantityPricingSchedule/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="quantityPricingSchedule/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="quantityPricingSchedule/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="quantityPricingSchedule/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="useMarginalRates" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="overallQuantityPricingType" selectable="true" selected="true" sortable="true" type="ItemOverallQuantityPricingType" typeNamespace="urn:types.accounting_2019_2.lists.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="pricingGroup/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="pricingGroup/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="pricingGroup/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="pricingGroup/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="customForm/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="customForm/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="customForm/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="customForm/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="itemId" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="upcCode" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="displayName" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vendorName" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="parent/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="parent/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="parent/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="parent/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="isOnline" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="isGcoCompliant" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="offerSupport" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="isInactive" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="matrixItemNameTemplate" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="availableToPartners" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="department/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="department/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="department/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="department/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="class/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="class/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="class/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="class/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="location/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="location/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="location/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="location/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="vsoePrice" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vsoeSopGroup" selectable="true" selected="true" sortable="true" type="VsoeSopGroup" typeNamespace="urn:types.common_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="vsoeDeferral" selectable="true" selected="true" sortable="true" type="VsoeDeferral" typeNamespace="urn:types.common_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="vsoePermitDiscount" selectable="true" selected="true" sortable="true" type="VsoePermitDiscount" typeNamespace="urn:types.common_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="vsoeDelivered" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="itemRevenueCategory/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="itemRevenueCategory/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="itemRevenueCategory/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="itemRevenueCategory/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="currency" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="itemVendorList/[@replaceAll]" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="pricingMatrix/[@replaceAll]" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="accountingBookDetailList/[@replaceAll]" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseTaxCode/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseTaxCode/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseTaxCode/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="purchaseTaxCode/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="rate" selectable="true" selected="true" sortable="true" type="double" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="salesTaxCode/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="salesTaxCode/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="salesTaxCode/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="salesTaxCode/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="translationsList/[@replaceAll]" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vendor/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vendor/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vendor/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="vendor/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="hierarchyVersionsList/[@replaceAll]" selectable="true" selected="true" sortable="true" type="boolean" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="consumptionUnit/name" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="consumptionUnit/[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="consumptionUnit/[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="consumptionUnit/[@type]" selectable="true" selected="true" sortable="true" type="RecordType" typeNamespace="urn:types.core_2019_2.platform.webservices.netsuite.com"/>
+                    <ConnectorField filterable="true" name="[@internalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                    <ConnectorField filterable="true" name="[@externalId]" selectable="true" selected="true" sortable="true" type="string" typeNamespace="http://www.w3.org/2001/XMLSchema"/>
+                  </FieldList>
+                </ConnectorObject>
+              </Fields>
+              <Inputs>
+                <Input key="0" name="ID"/>
+              </Inputs>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
